@@ -1,0 +1,59 @@
+{
+  "schema": "comet.native.verification-receipt.v3",
+  "kind": "automated-check",
+  "role": "acceptance-evidence",
+  "status": "passed",
+  "bindings": {
+    "change": "python-rewrite",
+    "sourceRevision": 3,
+    "contractHash": "efdf8b772120296161954a268d0ebb7b32e2d304696c4488aa44d097c80d1b45",
+    "scopeHash": "e46cfe6a1a3448ed2ba88ebba9f195fd4e2d2b4787dc4c04fac73a03600e4970",
+    "snapshotHash": "373904e71ea9d444614830c53cd7bd37b9d3ae4903393ac27e622e912e4ff33c",
+    "artifactHash": "ca37d604dda6b77e12a07e02debd01f487e392acc80c7fe26060695b3417490c"
+  },
+  "acceptanceIds": [
+    "acceptance-4e63704618c542aa9afbb540ff51eeb22d1d6df138a13e8bb1f5d33ba0be2cf9",
+    "acceptance-76b17e7e6a49431e1a109684cdc8872c9a828232c90dba7d1907ab6f9bc469ae",
+    "acceptance-a84085aacbc775bba20e3bc5ddd7edc4a2623e17af64c57cf1107cd0548b4f4b",
+    "acceptance-b8a93344433d55e85a27b1722767f3a425e0382157ee5b84133e54bf4936cb35"
+  ],
+  "actor": "native-runtime:command:docker",
+  "issuedAt": "2026-08-10T05:31:29.884Z",
+  "evidence": {
+    "executable": "docker",
+    "args": [
+      "run",
+      "--rm",
+      "--mount",
+      "type=bind,source=E:\\WorkSpace\\github\\skill-up\\.worktrees\\python-rewrite,target=/work",
+      "-w",
+      "/work",
+      "python:3.11-slim",
+      "sh",
+      "-lc",
+      "pip install --disable-pip-version-check -q . pytest pytest-cov && pytest -q"
+    ],
+    "cwd": ".",
+    "exitCode": 0,
+    "signal": null,
+    "timedOut": false,
+    "timeoutMs": 240000,
+    "startedAt": "2026-08-10T05:30:43.425Z",
+    "endedAt": "2026-08-10T05:31:29.884Z",
+    "worktree": {
+      "provider": "git",
+      "root": ".",
+      "beforeCommit": "c6ca37aeb6c36eca1141101d0632401414957705",
+      "afterCommit": "c6ca37aeb6c36eca1141101d0632401414957705"
+    },
+    "afterFence": {
+      "snapshotHash": "373904e71ea9d444614830c53cd7bd37b9d3ae4903393ac27e622e912e4ff33c",
+      "scopeHash": "e46cfe6a1a3448ed2ba88ebba9f195fd4e2d2b4787dc4c04fac73a03600e4970",
+      "matched": true
+    },
+    "outputHash": "c820f537524bd1664ff17925f16930fc61e2bece8d5225756201db7af1841a89",
+    "outputSummary": "WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv\n....................                                                     [100%]\n================================ tests coverage ================================\n_______________ coverage: platform linux, python 3.11.15-final-0 _______________\n\nName                                                                    Stmts   Miss  Cover   Missing\n-----------------------------------------------------------------------------------------------------\n/usr/local/lib/python3.11/site-packages/agent_skill_eval/__init__.py        4      0   100%\n/usr/local/lib/python3.11/site-packages/agent_skill_eval/__main__.py        2      2     0%   1-3\n/usr/local/lib/python3.11/site-packages/agent_skill_eval/agent.py         129     29    78%   49-67, 101-103, 118, 175-176, 194, 215, 226, 230\n/usr/local/lib/python3.11/site-packages/agent_skill_eval/cli.py            60     13    78%   16-17, 32-33, 44-45, 48, 70, 77, 79-80, 86, 90\n/usr/local/lib/python3.11/site-packages/agent_skill_eval/errors.py          4      0   100%\n/usr/local/lib/python3.11/site-packages/agent_skill_eval/evaluator.py      94     18    81%   39-50, 52-54, 65-68, 84, 103-105\n/usr/local/lib/python3.11/site-packages/agent_skill_eval/judge.py          91     37    59%   21-26, 56-61, 63, 74, 85-95, 97-104, 133, 148, 150, 152, 154-174\n/usr/local/lib/python3.11/site-packages/agent_skill_eval/loader.py        122     30    75%   27-28, 30, 38-40, 81, 83, 85, 87, 91, 97, 99, 127, 129, 131, 140, 143-144, 146, 149-155, 161, 164-165, 179, 182\n/usr/local/lib/python3.11/site-packages/agent_skill_eval/models.py        214      0   100%\n/usr/local/lib/python3.11/site-packages/agent_skill_eval/report.py         38      2    95%   61-62\n/usr/local/lib/python3.11/site-packages/agent_skill_eval/runtime.py        85     14    84%   58, 67-72, 98-100, 115, 138-139, 150\n-----------------------------------------------------------------------------------------------------\nTOTAL                                                                     843    145    83%\n20 passed in 3.59s",
+    "outputTruncated": false
+  },
+  "receiptHash": "d9d202e2ad462720d5b216757e6d9f22434406f440c011e1cbdc03740dd776b8"
+}

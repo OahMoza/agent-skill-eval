@@ -1,0 +1,56 @@
+{
+  "schema": "comet.native.verification-receipt.v3",
+  "kind": "automated-check",
+  "role": "acceptance-evidence",
+  "status": "passed",
+  "bindings": {
+    "change": "python-rewrite",
+    "sourceRevision": 3,
+    "contractHash": "efdf8b772120296161954a268d0ebb7b32e2d304696c4488aa44d097c80d1b45",
+    "scopeHash": "e46cfe6a1a3448ed2ba88ebba9f195fd4e2d2b4787dc4c04fac73a03600e4970",
+    "snapshotHash": "373904e71ea9d444614830c53cd7bd37b9d3ae4903393ac27e622e912e4ff33c",
+    "artifactHash": "ca37d604dda6b77e12a07e02debd01f487e392acc80c7fe26060695b3417490c"
+  },
+  "acceptanceIds": [
+    "acceptance-1326ac20013f4df2e8c75a4e0591ead4d588fc09c358a4ad56e92f346d5bba84",
+    "acceptance-1b701fa182fd20114def5865b0cf9fcb44a2b63194a763a0c4a487916ddd4dbf",
+    "acceptance-591e98bd09d9bab7d82334be512b3f0ef33380d72520a5323bae9a7c0301fe6d",
+    "acceptance-6bf2f8596ef873b1c70b955de93ef1c8aa8a9fedef7e0c41a31815473bf9213d",
+    "acceptance-71ca9840da94539014c12bf0b2ebee879892339f4bb230eb60b62d1d29d634a8",
+    "acceptance-767be88a9321eac977dd4192a9ddd154917fc3f220843aaead2d03b6ef3bdd45",
+    "acceptance-ec8c4c092ffe7b2bf46f06d6bfebe56ea00ecc0a329bbdf1a8a4f40a3413fe3c"
+  ],
+  "actor": "native-runtime:command:uv",
+  "issuedAt": "2026-08-10T05:27:54.658Z",
+  "evidence": {
+    "executable": "uv",
+    "args": [
+      "build",
+      "--quiet",
+      "--out-dir",
+      ".tmp/receipt-dist"
+    ],
+    "cwd": ".",
+    "exitCode": 0,
+    "signal": null,
+    "timedOut": false,
+    "timeoutMs": 120000,
+    "startedAt": "2026-08-10T05:27:31.234Z",
+    "endedAt": "2026-08-10T05:27:54.658Z",
+    "worktree": {
+      "provider": "git",
+      "root": ".",
+      "beforeCommit": "c6ca37aeb6c36eca1141101d0632401414957705",
+      "afterCommit": "c6ca37aeb6c36eca1141101d0632401414957705"
+    },
+    "afterFence": {
+      "snapshotHash": "373904e71ea9d444614830c53cd7bd37b9d3ae4903393ac27e622e912e4ff33c",
+      "scopeHash": "e46cfe6a1a3448ed2ba88ebba9f195fd4e2d2b4787dc4c04fac73a03600e4970",
+      "matched": true
+    },
+    "outputHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputSummary": "(exit 0)",
+    "outputTruncated": false
+  },
+  "receiptHash": "67764a8c9c1db145b1cecf1626dfe6a9c17761c8283e6e409b43c5d2caecb12a"
+}

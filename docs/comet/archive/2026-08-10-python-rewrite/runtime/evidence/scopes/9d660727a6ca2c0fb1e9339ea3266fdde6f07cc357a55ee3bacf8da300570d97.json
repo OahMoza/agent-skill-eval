@@ -1,0 +1,544 @@
+{
+  "schema": "comet.native.implementation-scope.v2",
+  "contractHash": "efdf8b772120296161954a268d0ebb7b32e2d304696c4488aa44d097c80d1b45",
+  "baselineProjectionRef": "runtime/evidence/snapshots/ca370efa41272f9bb9c98b2a19532ac842c6f1d8b976e5eaf2af2ab98895538d.json",
+  "baselineProjectionHash": "ca370efa41272f9bb9c98b2a19532ac842c6f1d8b976e5eaf2af2ab98895538d",
+  "currentProjectionRef": "runtime/evidence/snapshots/373904e71ea9d444614830c53cd7bd37b9d3ae4903393ac27e622e912e4ff33c.json",
+  "currentProjectionHash": "373904e71ea9d444614830c53cd7bd37b9d3ae4903393ac27e622e912e4ff33c",
+  "complete": false,
+  "declaredArtifacts": [
+    {
+      "path": ".github/workflows/python.yml",
+      "kind": "file"
+    },
+    {
+      "path": ".gitignore",
+      "kind": "file"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "kind": "file"
+    },
+    {
+      "path": "README.md",
+      "kind": "file"
+    },
+    {
+      "path": "README.zh.md",
+      "kind": "file"
+    },
+    {
+      "path": "docs/python.md",
+      "kind": "file"
+    },
+    {
+      "path": "examples/python-basic",
+      "kind": "directory"
+    },
+    {
+      "path": "internal/runtime/none_exec_other.go",
+      "kind": "file"
+    },
+    {
+      "path": "pyproject.toml",
+      "kind": "file"
+    },
+    {
+      "path": "src/agent_skill_eval",
+      "kind": "directory"
+    },
+    {
+      "path": "tests",
+      "kind": "directory"
+    },
+    {
+      "path": "uv.lock",
+      "kind": "file"
+    }
+  ],
+  "changes": [
+    {
+      "path": ".codegraph/.gitignore",
+      "kind": "added",
+      "before": null,
+      "after": {
+        "hash": "47c0dacebca9f56c9020b68584470dfc51f07650a3719904e98f4b447a5dd003",
+        "size": 229
+      },
+      "attributedTo": []
+    },
+    {
+      "path": ".github/workflows/python.yml",
+      "kind": "added",
+      "before": null,
+      "after": {
+        "hash": "edd95a31d75f3d185b16ca24f43b6501d9e5dc54afafbc4e78a7260a368d1d6f",
+        "size": 846
+      },
+      "attributedTo": [
+        {
+          "path": ".github/workflows/python.yml",
+          "kind": "file"
+        }
+      ]
+    },
+    {
+      "path": ".gitignore",
+      "kind": "modified",
+      "before": {
+        "hash": "ce46dc32fd3dffc17bf7cd258c736b22cfa4d1e6d3ad69bfb3937b055641e90f",
+        "size": 740
+      },
+      "after": {
+        "hash": "1c34a91047f81c277f96f2faeef14662df7ceb3dfa4438e3bd84bbf9fbb5c99a",
+        "size": 862
+      },
+      "attributedTo": [
+        {
+          "path": ".gitignore",
+          "kind": "file"
+        }
+      ]
+    },
+    {
+      "path": "CHANGELOG.md",
+      "kind": "modified",
+      "before": {
+        "hash": "b08a2313b972a1e3b422a480edb1997322100390dc1a558c9202391e4b44bbf2",
+        "size": 25083
+      },
+      "after": {
+        "hash": "8e3bcfe24c28acb9e831954d5f685cd31beca0b52fa08ff80a708f91b4dbde2b",
+        "size": 25397
+      },
+      "attributedTo": [
+        {
+          "path": "CHANGELOG.md",
+          "kind": "file"
+        }
+      ]
+    },
+    {
+      "path": "README.md",
+      "kind": "modified",
+      "before": {
+        "hash": "76cba31a1c3a26be82b9542aab2f6606333c709892d64b391b5efceafcec53d1",
+        "size": 15181
+      },
+      "after": {
+        "hash": "67b74a3a79c03fb9554643c8a53022d733c08f84129cd9b90327e80e00dceee0",
+        "size": 15481
+      },
+      "attributedTo": [
+        {
+          "path": "README.md",
+          "kind": "file"
+        }
+      ]
+    },
+    {
+      "path": "README.zh.md",
+      "kind": "modified",
+      "before": {
+        "hash": "05dd5abd69513aa8b7e2b45d9746f068f9f84774602082001404905a820049ee",
+        "size": 9373
+      },
+      "after": {
+        "hash": "e278f376b1a57783edfe02f5b5a527bf4977ae5018bce3133fa7118d5805c9b4",
+        "size": 9612
+      },
+      "attributedTo": [
+        {
+          "path": "README.zh.md",
+          "kind": "file"
+        }
+      ]
+    },
+    {
+      "path": "docs/python.md",
+      "kind": "added",
+      "before": null,
+      "after": {
+        "hash": "5a2f8d48fbbe0eff61586b00a6640ab99ea937f5f47d43511d3d85600d3acc5e",
+        "size": 2165
+      },
+      "attributedTo": [
+        {
+          "path": "docs/python.md",
+          "kind": "file"
+        }
+      ]
+    },
+    {
+      "path": "examples/python-basic/SKILL.md",
+      "kind": "added",
+      "before": null,
+      "after": {
+        "hash": "aa3e44f54a95a333235c057ef7bfd41946bdc29fb7510d73d64a0401e53cf16e",
+        "size": 196
+      },
+      "attributedTo": [
+        {
+          "path": "examples/python-basic",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "path": "examples/python-basic/evals/cases/find-null-bug.yaml",
+      "kind": "added",
+      "before": null,
+      "after": {
+        "hash": "b157fa85d88a5641ed1e2b71df656c82de4dab4e6d5c3eda126f45877ae8d105",
+        "size": 179
+      },
+      "attributedTo": [
+        {
+          "path": "examples/python-basic",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "path": "examples/python-basic/evals/eval.yaml",
+      "kind": "added",
+      "before": null,
+      "after": {
+        "hash": "abe3143c73cb7ee614968b1b7410f6761dfd98e2c7401b27b0416e5fc0f8a353",
+        "size": 359
+      },
+      "attributedTo": [
+        {
+          "path": "examples/python-basic",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "path": "internal/runtime/none_exec_other.go",
+      "kind": "modified",
+      "before": {
+        "hash": "90c5b05699d7eb77457ef3379de55f1b0796595c443d1a07fed64302c4164003",
+        "size": 194
+      },
+      "after": {
+        "hash": "3aebba7882c34d3d64bbc3378e0a33ff845e8cf2af4fb7405b8b24b234a76e3a",
+        "size": 327
+      },
+      "attributedTo": [
+        {
+          "path": "internal/runtime/none_exec_other.go",
+          "kind": "file"
+        }
+      ]
+    },
+    {
+      "path": "pyproject.toml",
+      "kind": "added",
+      "before": null,
+      "after": {
+        "hash": "c063f069030e9df6cdd665aa9a22022b17ea8f762f971d4f224c0bd3cd6674ef",
+        "size": 1005
+      },
+      "attributedTo": [
+        {
+          "path": "pyproject.toml",
+          "kind": "file"
+        }
+      ]
+    },
+    {
+      "path": "src/agent_skill_eval/__init__.py",
+      "kind": "added",
+      "before": null,
+      "after": {
+        "hash": "c3745640c2bd2fa8ef8b1c008b73b59cd01d026903e2d93a698ac322111a3aad",
+        "size": 229
+      },
+      "attributedTo": [
+        {
+          "path": "src/agent_skill_eval",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "path": "src/agent_skill_eval/__main__.py",
+      "kind": "added",
+      "before": null,
+      "after": {
+        "hash": "241fe4c99e3b33c3eabad49ac84710fd9d9840ef9d05500ceb55f4024c497dde",
+        "size": 46
+      },
+      "attributedTo": [
+        {
+          "path": "src/agent_skill_eval",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "path": "src/agent_skill_eval/agent.py",
+      "kind": "added",
+      "before": null,
+      "after": {
+        "hash": "f514b461a1686cd5b794bddd31f2f369cf9681ba489d3421cf8e74a22b727c11",
+        "size": 9508
+      },
+      "attributedTo": [
+        {
+          "path": "src/agent_skill_eval",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "path": "src/agent_skill_eval/cli.py",
+      "kind": "added",
+      "before": null,
+      "after": {
+        "hash": "4197cc35495548807a8c191c9c24d48671f1eaff9e3c0d907ef11421fe59e689",
+        "size": 3166
+      },
+      "attributedTo": [
+        {
+          "path": "src/agent_skill_eval",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "path": "src/agent_skill_eval/errors.py",
+      "kind": "added",
+      "before": null,
+      "after": {
+        "hash": "a8d4e399af8d0b7bcf9451589649f195957595e244cabc8f3ec8bb66ed5946ab",
+        "size": 454
+      },
+      "attributedTo": [
+        {
+          "path": "src/agent_skill_eval",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "path": "src/agent_skill_eval/evaluator.py",
+      "kind": "added",
+      "before": null,
+      "after": {
+        "hash": "3abaec330e89d0ca02e31e76ca77bf2a6989e10c4b4040195ca39ee866e95291",
+        "size": 6814
+      },
+      "attributedTo": [
+        {
+          "path": "src/agent_skill_eval",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "path": "src/agent_skill_eval/judge.py",
+      "kind": "added",
+      "before": null,
+      "after": {
+        "hash": "e3803abc8cdacec633353c5dc595b6d2fbc3b953b3db9d4412abe8f219c12294",
+        "size": 7834
+      },
+      "attributedTo": [
+        {
+          "path": "src/agent_skill_eval",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "path": "src/agent_skill_eval/loader.py",
+      "kind": "added",
+      "before": null,
+      "after": {
+        "hash": "f5992fa4e914b47e03701ae024d395d5da9ba391330c45dbeb945633c01d10b7",
+        "size": 7691
+      },
+      "attributedTo": [
+        {
+          "path": "src/agent_skill_eval",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "path": "src/agent_skill_eval/models.py",
+      "kind": "added",
+      "before": null,
+      "after": {
+        "hash": "e8da319f2ffc25cdc96394f662e202042014326b9c5b4b5e38e19e95d7c03c7f",
+        "size": 8352
+      },
+      "attributedTo": [
+        {
+          "path": "src/agent_skill_eval",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "path": "src/agent_skill_eval/report.py",
+      "kind": "added",
+      "before": null,
+      "after": {
+        "hash": "2cd0d3ddbaacb82ce1228de717c7e562fa3933ba13dad7b3c2edd5006566e4f9",
+        "size": 2241
+      },
+      "attributedTo": [
+        {
+          "path": "src/agent_skill_eval",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "path": "src/agent_skill_eval/runtime.py",
+      "kind": "added",
+      "before": null,
+      "after": {
+        "hash": "c26904d0b4dbaa6b46202ea612e6a368cfee87e2cfaafbfb1becc3faeef87725",
+        "size": 4890
+      },
+      "attributedTo": [
+        {
+          "path": "src/agent_skill_eval",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "path": "tests/conftest.py",
+      "kind": "added",
+      "before": null,
+      "after": {
+        "hash": "5e3ef5d0920ef59c56aa7f2bc5ef8b25a7d96863bb512ce5e7b19c01de081712",
+        "size": 1310
+      },
+      "attributedTo": [
+        {
+          "path": "tests",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "path": "tests/test_cli.py",
+      "kind": "added",
+      "before": null,
+      "after": {
+        "hash": "26c4b2b75548412f0ee333126813fc203d0c80a5c3ebb6c0d7237a75ddd23af2",
+        "size": 982
+      },
+      "attributedTo": [
+        {
+          "path": "tests",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "path": "tests/test_evaluator.py",
+      "kind": "added",
+      "before": null,
+      "after": {
+        "hash": "3471962861b79b9ab812fc7cc35106719a105cc88c3ed1de3e35a8a1e19bc367",
+        "size": 4020
+      },
+      "attributedTo": [
+        {
+          "path": "tests",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "path": "tests/test_judge.py",
+      "kind": "added",
+      "before": null,
+      "after": {
+        "hash": "7cf2df2e4ab39ae06eb6296737206141c03632beea3cd62900a60b4aeefab657",
+        "size": 2026
+      },
+      "attributedTo": [
+        {
+          "path": "tests",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "path": "tests/test_loader.py",
+      "kind": "added",
+      "before": null,
+      "after": {
+        "hash": "6cceadafba6a822996115889b9dfbf70f2613a46f93a28bf059610e72c101761",
+        "size": 2932
+      },
+      "attributedTo": [
+        {
+          "path": "tests",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "path": "tests/test_runtime.py",
+      "kind": "added",
+      "before": null,
+      "after": {
+        "hash": "c89718154eecfd3f401573adc4bbce3fb9689e96d24ccd5d105a939deb6364ce",
+        "size": 1186
+      },
+      "attributedTo": [
+        {
+          "path": "tests",
+          "kind": "directory"
+        }
+      ]
+    },
+    {
+      "path": "uv.lock",
+      "kind": "added",
+      "before": null,
+      "after": {
+        "hash": "380b740aab542050e945823ea8119000876afe9df649e217fc2765c8915db5f7",
+        "size": 161642
+      },
+      "attributedTo": [
+        {
+          "path": "uv.lock",
+          "kind": "file"
+        }
+      ]
+    }
+  ],
+  "unattributed": [
+    {
+      "path": ".codegraph/.gitignore",
+      "kind": "added",
+      "before": null,
+      "after": {
+        "hash": "47c0dacebca9f56c9020b68584470dfc51f07650a3719904e98f4b447a5dd003",
+        "size": 229
+      },
+      "attributedTo": []
+    }
+  ],
+  "unresolvedScopes": [
+    {
+      "id": "scope:f0b85ac3f2c8a9419c40085d4428ba863c34f5bbb72e0a302926419cabf6d3d9",
+      "kind": "unattributed-change",
+      "source": "implementation-scope",
+      "path": ".codegraph/.gitignore",
+      "reason": "Changed path is not covered by a declared artifact: .codegraph/.gitignore"
+    }
+  ],
+  "noCodeReason": null,
+  "scopeHash": "9d660727a6ca2c0fb1e9339ea3266fdde6f07cc357a55ee3bacf8da300570d97"
+}

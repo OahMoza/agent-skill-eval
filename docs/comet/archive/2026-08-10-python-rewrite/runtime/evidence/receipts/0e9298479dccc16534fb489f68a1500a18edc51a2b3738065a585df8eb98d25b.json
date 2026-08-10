@@ -1,0 +1,38 @@
+{
+  "schema": "comet.native.verification-receipt.v3",
+  "kind": "manual-evidence",
+  "role": "acceptance-evidence",
+  "status": "passed",
+  "bindings": {
+    "change": "python-rewrite",
+    "sourceRevision": 3,
+    "contractHash": "efdf8b772120296161954a268d0ebb7b32e2d304696c4488aa44d097c80d1b45",
+    "scopeHash": "e46cfe6a1a3448ed2ba88ebba9f195fd4e2d2b4787dc4c04fac73a03600e4970",
+    "snapshotHash": "373904e71ea9d444614830c53cd7bd37b9d3ae4903393ac27e622e912e4ff33c",
+    "artifactHash": "ca37d604dda6b77e12a07e02debd01f487e392acc80c7fe26060695b3417490c"
+  },
+  "acceptanceIds": [
+    "acceptance-19472fa3f46c50329339291827fd4999fa1d00121f73553c17e03bb40a00e08d",
+    "acceptance-4dc5682b244408e08ddecbb930c3916df5534f43d72156f867c6ff0311322419",
+    "acceptance-593ee1c52dbc9b4207ca3da373b783982eac27e40a05886979021d8386c063a6",
+    "acceptance-7351ae4eb517999cb75d4b06297efea4a9a16f38058b609fad376f6c35335b10",
+    "acceptance-9c84d85aebdcc37506154d7a5b7a5e48faa64787bda5d27236c56130d07c0e7a",
+    "acceptance-a9ed5818afc320504d0abe3efe86fd8c25cd177ecc66b9267bef420aa6aa258e",
+    "acceptance-b0a078eac1cc4f42e11191be4be9f8de048e9467cc2ebe8fbc9cb7784125aadd",
+    "acceptance-c658a0a0accc6c82d20d47c5a6dc691086c2be5f03a2ae7339315822295e594f",
+    "acceptance-cffa01d394b04d12aeca979ababdaee9fccd68f3bd8c0f2f571a5ceedc085fca",
+    "acceptance-e5ec710cbc689feccd05bc1759c67f4391b8001bebd13e05b79aff63ecbfa174",
+    "acceptance-fdc05add7fda42796cb8351ca80374bcf3ddb47c110962aecfb6438f288bf04c"
+  ],
+  "actor": "native-runtime:manual-evidence",
+  "issuedAt": "2026-08-10T05:39:49.147Z",
+  "evidence": {
+    "steps": [
+      "静态审查 pyproject、CLI、文档、许可证、Git 远端与迁移边界"
+    ],
+    "observations": [
+      "确认产品与包均使用 agent-skill-eval 独立品牌，未注册 skill-up CLI 别名；Apache-2.0 LICENSE 保留并进入构建产物；现有 Go 源码保持并存；docs/python.md 明示首阶段与延后项；当前分支未配置或推送目标 GitLab 远端，干净 Initial commit 仍等待首阶段验证完成后导出；Python 使用 pathlib、subprocess argv 与 Protocol 边界，未加入 macOS 特有破坏性逻辑。"
+    ]
+  },
+  "receiptHash": "0e9298479dccc16534fb489f68a1500a18edc51a2b3738065a585df8eb98d25b"
+}

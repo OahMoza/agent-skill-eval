@@ -1,0 +1,58 @@
+{
+  "schema": "comet.native.verification-receipt.v3",
+  "kind": "automated-check",
+  "role": "acceptance-evidence",
+  "status": "failed",
+  "bindings": {
+    "change": "python-rewrite",
+    "sourceRevision": 3,
+    "contractHash": "efdf8b772120296161954a268d0ebb7b32e2d304696c4488aa44d097c80d1b45",
+    "scopeHash": "e46cfe6a1a3448ed2ba88ebba9f195fd4e2d2b4787dc4c04fac73a03600e4970",
+    "snapshotHash": "373904e71ea9d444614830c53cd7bd37b9d3ae4903393ac27e622e912e4ff33c",
+    "artifactHash": "ca37d604dda6b77e12a07e02debd01f487e392acc80c7fe26060695b3417490c"
+  },
+  "acceptanceIds": [
+    "acceptance-4f6121a0a82e57ff201535d1e29de414ca798fa4898e4dc003e8d578adc6c358",
+    "acceptance-893d18c6458596580d345c5a4699eabd50e110650d210bf89d1b1d53a870bf02",
+    "acceptance-9c84d85aebdcc37506154d7a5b7a5e48faa64787bda5d27236c56130d07c0e7a"
+  ],
+  "actor": "native-runtime:command:docker",
+  "issuedAt": "2026-08-10T05:35:15.534Z",
+  "evidence": {
+    "executable": "docker",
+    "args": [
+      "run",
+      "--rm",
+      "--mount",
+      "type=bind,source=E:\\WorkSpace\\github\\skill-up\\.worktrees\\python-rewrite,target=/work",
+      "-w",
+      "/work",
+      "golang:1.25",
+      "sh",
+      "-lc",
+      "go test -race ./..."
+    ],
+    "cwd": ".",
+    "exitCode": 127,
+    "signal": null,
+    "timedOut": false,
+    "timeoutMs": 540000,
+    "startedAt": "2026-08-10T05:33:45.671Z",
+    "endedAt": "2026-08-10T05:35:15.534Z",
+    "worktree": {
+      "provider": "git",
+      "root": ".",
+      "beforeCommit": "c6ca37aeb6c36eca1141101d0632401414957705",
+      "afterCommit": "c6ca37aeb6c36eca1141101d0632401414957705"
+    },
+    "afterFence": {
+      "snapshotHash": "373904e71ea9d444614830c53cd7bd37b9d3ae4903393ac27e622e912e4ff33c",
+      "scopeHash": "e46cfe6a1a3448ed2ba88ebba9f195fd4e2d2b4787dc4c04fac73a03600e4970",
+      "matched": true
+    },
+    "outputHash": "20b3c1f744be7b93243c2c612ffd5ab668d71a3325edca83ce1dc8a5187d0211",
+    "outputSummary": "Unable to find image 'golang:1.25' locally\n1.25: Pulling from library/golang\n1da3cb2f93f2: Pulling fs layer\n68b64c51cda3: Pulling fs layer\nec935196e6a0: Pulling fs layer\n83755e1d13c9: Pulling fs layer\ncbce97438861: Pulling fs layer\n3b081f6ae2fa: Pulling fs layer\n4f4fb700ef54: Pulling fs layer\ncbce97438861: Waiting\n3b081f6ae2fa: Waiting\n4f4fb700ef54: Waiting\n83755e1d13c9: Waiting\n68b64c51cda3: Verifying Checksum\n68b64c51cda3: Download complete\n1da3cb2f93f2: Download complete\n1da3cb2f93f2: Pull complete\n68b64c51cda3: Pull complete\nec935196e6a0: Verifying Checksum\nec935196e6a0: Download complete\n3b081f6ae2fa: Verifying Checksum\n3b081f6ae2fa: Download complete\nec935196e6a0: Pull complete\n83755e1d13c9: Verifying Checksum\n83755e1d13c9: Download complete\n4f4fb700ef54: Verifying Checksum\n4f4fb700ef54: Download complete\n83755e1d13c9: Pull complete\ncbce97438861: Verifying Checksum\ncbce97438861: Download complete\ncbce97438861: Pull complete\n3b081f6ae2fa: Pull complete\n4f4fb700ef54: Pull complete\nDigest: sha256:fe5d57d3b718e7a4986bae156c2d73f44973bfd313073aed08a4de6692bb6161\nStatus: Downloaded newer image for golang:1.25\nsh: 1: go: not found",
+    "outputTruncated": false
+  },
+  "receiptHash": "e2772e183b6001cee3a7e245766f03abc9437736c7ee8bda136db39c2550061e"
+}

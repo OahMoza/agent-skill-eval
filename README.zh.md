@@ -46,6 +46,10 @@
 
 ## 简介
 
+> **Python 预览版：** 本仓库同时包含独立品牌 `agent-skill-eval` 的第一阶段实现。
+> 当前仅覆盖本地核心评测闭环，尚未替代 Go CLI；支持范围与延后能力见
+> [docs/python.md](docs/python.md)。
+
 **skill-up** 是 Agent Skill 的评测与演进工具。
 
 - **评测（Evaluation）**让 Skill 质量可度量、可复现：声明式 YAML 用例可在多个 Agent Engine 中运行，通过规则、脚本或 Agent Judge 评分，并在本地或 CI 中生成结构化报告。

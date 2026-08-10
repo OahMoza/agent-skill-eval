@@ -1,0 +1,26 @@
+schema_version: v1alpha1
+
+environment:
+  type: none
+
+engine:
+  name: fake
+  kwargs:
+    response: "analysis complete: null bug found"
+
+cases:
+  files:
+    - evals/cases/find-null-bug.yaml
+  defaults:
+    timeout_seconds: 30
+    max_turns: 1
+
+judge:
+  type: rule_based
+  success:
+    - output_contains:
+        all: ["null", "bug"]
+
+report:
+  formats: [json]
+

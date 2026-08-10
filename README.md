@@ -48,6 +48,11 @@
 
 **skill-up** is an evaluation and evolution tool for Agent Skills.
 
+> **Python preview:** This repository now also contains the independently
+> branded `agent-skill-eval` first-stage implementation. It currently covers a
+> local core evaluation slice and does not replace the Go CLI. See
+> [docs/python.md](docs/python.md) for its supported and deferred capabilities.
+
 - **Evaluation** makes Skill quality measurable and repeatable: declarative YAML cases run across multiple Agent Engines, use rule, script, or Agent judges, and produce structured reports locally or in CI.
 - **Evolution** turns those results into the next improvement: through conversation, **skill-upper** reads failures, automatically repairs or expands the eval suite, reruns skill-up, and keeps iterating with you.
 

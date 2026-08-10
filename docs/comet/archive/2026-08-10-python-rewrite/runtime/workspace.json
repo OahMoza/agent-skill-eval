@@ -1,0 +1,14 @@
+{
+  "schema": "comet.native.workspace.v3",
+  "capturedAt": "2026-08-10T03:13:05.459Z",
+  "capturedRevision": 1,
+  "nativeRootRef": "docs/comet",
+  "projectRootId": "d97e26cc3f710883d4ddf7cb08a72bd7ea081bc97e5f42b7a459c71d5d06e938",
+  "nativeRootId": "a127024b5cf089a4a4ec1319b619434c2dae37eb6942700fbbd92bf210e527dc",
+  "projectRootPathId": "8c6474f07f1f112ab21834e350d0701b5d96c7567fdf533d82cf6c0517141c57",
+  "nativeRootPathId": "037ff8bb7d9973ff53f965a4cf543d20196f1a6d6c9bc7cd8ccd21f686a5c50b",
+  "isolation": "worktree",
+  "changeBranch": "comet/python-rewrite",
+  "targetBranch": "main",
+  "finish": "push"
+}

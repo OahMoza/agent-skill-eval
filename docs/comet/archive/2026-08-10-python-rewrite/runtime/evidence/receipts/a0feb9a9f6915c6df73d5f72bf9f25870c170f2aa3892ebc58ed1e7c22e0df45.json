@@ -1,0 +1,52 @@
+{
+  "schema": "comet.native.verification-receipt.v3",
+  "kind": "automated-check",
+  "role": "acceptance-evidence",
+  "status": "passed",
+  "bindings": {
+    "change": "python-rewrite",
+    "sourceRevision": 3,
+    "contractHash": "efdf8b772120296161954a268d0ebb7b32e2d304696c4488aa44d097c80d1b45",
+    "scopeHash": "e46cfe6a1a3448ed2ba88ebba9f195fd4e2d2b4787dc4c04fac73a03600e4970",
+    "snapshotHash": "373904e71ea9d444614830c53cd7bd37b9d3ae4903393ac27e622e912e4ff33c",
+    "artifactHash": "ca37d604dda6b77e12a07e02debd01f487e392acc80c7fe26060695b3417490c"
+  },
+  "acceptanceIds": [
+    "acceptance-002c1213fe8cdd60882628f1120884198cb57457e1678a795188af9aebb090e1"
+  ],
+  "actor": "native-runtime:command:uv",
+  "issuedAt": "2026-08-10T05:22:12.839Z",
+  "evidence": {
+    "executable": "uv",
+    "args": [
+      "run",
+      "ruff",
+      "format",
+      "--check",
+      "src",
+      "tests"
+    ],
+    "cwd": ".",
+    "exitCode": 0,
+    "signal": null,
+    "timedOut": false,
+    "timeoutMs": 120000,
+    "startedAt": "2026-08-10T05:22:12.286Z",
+    "endedAt": "2026-08-10T05:22:12.839Z",
+    "worktree": {
+      "provider": "git",
+      "root": ".",
+      "beforeCommit": "c6ca37aeb6c36eca1141101d0632401414957705",
+      "afterCommit": "c6ca37aeb6c36eca1141101d0632401414957705"
+    },
+    "afterFence": {
+      "snapshotHash": "373904e71ea9d444614830c53cd7bd37b9d3ae4903393ac27e622e912e4ff33c",
+      "scopeHash": "e46cfe6a1a3448ed2ba88ebba9f195fd4e2d2b4787dc4c04fac73a03600e4970",
+      "matched": true
+    },
+    "outputHash": "ff581aaa8f1b2a77e28a682a7cae7b738f926730737e49664d06c810bcd5aa03",
+    "outputSummary": "17 files already formatted",
+    "outputTruncated": false
+  },
+  "receiptHash": "a0feb9a9f6915c6df73d5f72bf9f25870c170f2aa3892ebc58ed1e7c22e0df45"
+}

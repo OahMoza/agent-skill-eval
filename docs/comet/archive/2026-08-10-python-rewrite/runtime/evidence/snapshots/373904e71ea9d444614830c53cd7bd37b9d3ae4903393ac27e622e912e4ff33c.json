@@ -1,0 +1,2867 @@
+{
+  "schema": "comet.native.content-snapshot-projection.v1",
+  "origin": "explicit",
+  "capture": {
+    "provider": "git"
+  },
+  "complete": true,
+  "limits": {
+    "maxFiles": 10000,
+    "maxFileBytes": 268435456,
+    "maxTotalBytes": 268435456,
+    "maxManifestBytes": 1048576,
+    "maxDurationMs": 60000
+  },
+  "policy": {
+    "schema": "comet.native.snapshot-policy.v1",
+    "include": [
+      "**/*"
+    ],
+    "exclude": [
+      ".agents/skills/**",
+      ".amazonq/skills/**",
+      ".augment/skills/**",
+      ".bob/skills/**",
+      ".claude/skills/**",
+      ".cline/skills/**",
+      ".codebuddy/skills/**",
+      ".continue/skills/**",
+      ".cospec/skills/**",
+      ".crush/skills/**",
+      ".cursor/skills/**",
+      ".factory/skills/**",
+      ".forge/skills/**",
+      ".gemini/skills/**",
+      ".github/skills/**",
+      ".iflow/skills/**",
+      ".junie/skills/**",
+      ".kilocode/skills/**",
+      ".kimi-code/skills/**",
+      ".kiro/skills/**",
+      ".lingma/skills/**",
+      ".mimocode/skills/**",
+      ".opencode/skills/**",
+      ".pi/skills/**",
+      ".qoder/skills/**",
+      ".qwen/skills/**",
+      ".roo/skills/**",
+      ".trae-cn/skills/**",
+      ".trae/skills/**",
+      ".windsurf/skills/**",
+      ".zcode/skills/**"
+    ],
+    "hash": "1b4c47ee1cdc72323c591ca8b9c7a7a8c123dfe64880b6c65dc768e2bb965385"
+  },
+  "entries": [
+    {
+      "path": ".codegraph/.gitignore",
+      "hash": "47c0dacebca9f56c9020b68584470dfc51f07650a3719904e98f4b447a5dd003",
+      "size": 229,
+      "type": "file"
+    },
+    {
+      "path": ".codex/hooks.json",
+      "hash": "0c5e9e11e64be861ccf37c807fe77f9e2b702f24e444c8d7694fc07091d65cea",
+      "size": 415,
+      "type": "file"
+    },
+    {
+      "path": ".editorconfig",
+      "hash": "0ca7cf581b84f5ac1bbb7dbdf88baa10bbd18f58906ed30de3140ff5c2fbcee5",
+      "size": 284,
+      "type": "file"
+    },
+    {
+      "path": ".gitattributes",
+      "hash": "4754043f22107dd6722604bbe331233e6af425790ea0c7b1babc59f111f0141d",
+      "size": 526,
+      "type": "file"
+    },
+    {
+      "path": ".githooks/commit-msg",
+      "hash": "f3f99ab78acd1731d86f8d3d2a24c8f1def8e022f421436de2c50b522025149e",
+      "size": 948,
+      "type": "file"
+    },
+    {
+      "path": ".githooks/pre-commit",
+      "hash": "d227e472d6444ff6510800443cbffa024c817bfbd8da501c565a2ae44d650ce5",
+      "size": 1797,
+      "type": "file"
+    },
+    {
+      "path": ".github/CODEOWNERS",
+      "hash": "041b3ab3e1b27cb66d810a86e25f200d4fa1fe19e382f3b9e5da1acb77e8945b",
+      "size": 1391,
+      "type": "file"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "hash": "0ccdd84d6349f681ffc4a9355bc49af044dfde7e3ea1e887edcbeb21ffa100a7",
+      "size": 536,
+      "type": "file"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+      "hash": "b3da50920904e479f38273131780376cbfea538939b65a23ae4122a2cf841b89",
+      "size": 430,
+      "type": "file"
+    },
+    {
+      "path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "hash": "9f74bebe7779bdddcce0e241841d38ba14b141567639405833e5e1d524e532f9",
+      "size": 407,
+      "type": "file"
+    },
+    {
+      "path": ".github/actionlint.yaml",
+      "hash": "bc32a3469d4670831cf61f1c5071917601ca3e77e02b234b7e8d2cebbeb781f4",
+      "size": 131,
+      "type": "file"
+    },
+    {
+      "path": ".github/badges/coverage.json",
+      "hash": "7edbbaa5d8042f8c707a10683734d77e1ab78e210259c41d6c0b28347a34b026",
+      "size": 102,
+      "type": "file"
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "hash": "aedfc20a24fc18b58cf4c2d9cbd47aca56899ec441d4d2656c37063b5a26eef6",
+      "size": 1584,
+      "type": "file"
+    },
+    {
+      "path": ".github/model-e2e/package-lock.json",
+      "hash": "326ca28d0e6b5962bf1dfddfaaf65653f860e4417758ed9c4181d85076daccb1",
+      "size": 5508,
+      "type": "file"
+    },
+    {
+      "path": ".github/model-e2e/package.json",
+      "hash": "83b8fceebb06823052378d376fe75e69f7f188be26a4fc74af775aa9fffa4951",
+      "size": 158,
+      "type": "file"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "hash": "237e24764052c81fb41a7d20087468e3c2ecfa301c7d3c1a2746312896eeb803",
+      "size": 4154,
+      "type": "file"
+    },
+    {
+      "path": ".github/workflows/codeql.yml",
+      "hash": "9cc882aa526cba83e35e1a7786de0eaede47c947ea6867187f37657667f1055c",
+      "size": 5493,
+      "type": "file"
+    },
+    {
+      "path": ".github/workflows/docs.yml",
+      "hash": "93587a7cd73feabdd8b7efeff5be0ddff84eb020f5f8b5c5e826a438aede989a",
+      "size": 2422,
+      "type": "file"
+    },
+    {
+      "path": ".github/workflows/extended-ci.yml",
+      "hash": "858550406c8ea981d59a858d23bd9fdf23f57026d00a874b34b6fd6122f665c5",
+      "size": 4748,
+      "type": "file"
+    },
+    {
+      "path": ".github/workflows/model-e2e.yml",
+      "hash": "082e058dbe4f48a4cb4ce6e3cd54068a2242e48b30e1ec77d3c04cce10ec44c7",
+      "size": 16811,
+      "type": "file"
+    },
+    {
+      "path": ".github/workflows/python.yml",
+      "hash": "edd95a31d75f3d185b16ca24f43b6501d9e5dc54afafbc4e78a7260a368d1d6f",
+      "size": 846,
+      "type": "file"
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "hash": "59526339b8dc3a11b1175864c63e1d42f695219f045fa9643217c9a5b5e1f522",
+      "size": 5030,
+      "type": "file"
+    },
+    {
+      "path": ".github/workflows/runner-image.yml",
+      "hash": "296924db73883d7f68e5c8ab938673f88bead9fd8145956860258dd3deec796b",
+      "size": 7126,
+      "type": "file"
+    },
+    {
+      "path": ".github/workflows/skill-upper-self-eval.yml",
+      "hash": "ca245cecd77444dd0ed991de58ef5df396169fe936923f49a0d7abc625731880",
+      "size": 9921,
+      "type": "file"
+    },
+    {
+      "path": ".github/workflows/workflow-security.yml",
+      "hash": "bf34c9fe50c1d2446993ecfd942906cae8d54747abb88978395c7f660daf25d1",
+      "size": 1319,
+      "type": "file"
+    },
+    {
+      "path": ".gitignore",
+      "hash": "1c34a91047f81c277f96f2faeef14662df7ceb3dfa4438e3bd84bbf9fbb5c99a",
+      "size": 862,
+      "type": "file"
+    },
+    {
+      "path": ".golangci.yml",
+      "hash": "5e7a1d49368717117f67920d6c2a649a5dca21daa93a7da4a8671b1eb24f62b5",
+      "size": 9548,
+      "type": "file"
+    },
+    {
+      "path": ".goreleaser.yaml",
+      "hash": "6303b424b2d3e12749f8b9a9eea67aafe589ee0a6d7b0c9ccf7777f4fccadc09",
+      "size": 910,
+      "type": "file"
+    },
+    {
+      "path": "AGENTS.md",
+      "hash": "dd084957a8e7e7f58cbc2f98b7e5bc499067ae83b28ea13c66e3a239f61d50c7",
+      "size": 9593,
+      "type": "file"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "hash": "8e3bcfe24c28acb9e831954d5f685cd31beca0b52fa08ff80a708f91b4dbde2b",
+      "size": 25397,
+      "type": "file"
+    },
+    {
+      "path": "CLAUDE.md",
+      "hash": "a54ff182c7e8acf56acfd6e4b9c3ff41e2c41a31c9b211b2deb9df75d9a478f9",
+      "size": 9,
+      "type": "file"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "hash": "939ed62767bd598f34e9921ab2c5ab5a832a1b03a7ac6a3ea387c46855a4c45d",
+      "size": 12610,
+      "type": "file"
+    },
+    {
+      "path": "LICENSE",
+      "hash": "a8db51a5075b6dfbcce3a41b88f2ffc3fa7d69f1ba152a1123c27dd272104de4",
+      "size": 11544,
+      "type": "file"
+    },
+    {
+      "path": "Makefile",
+      "hash": "22c34c4649048397d00c4924122f03f2784ee228395e19493ad08d02b594e16d",
+      "size": 3828,
+      "type": "file"
+    },
+    {
+      "path": "README.md",
+      "hash": "67b74a3a79c03fb9554643c8a53022d733c08f84129cd9b90327e80e00dceee0",
+      "size": 15481,
+      "type": "file"
+    },
+    {
+      "path": "README.zh.md",
+      "hash": "e278f376b1a57783edfe02f5b5a527bf4977ae5018bce3133fa7118d5805c9b4",
+      "size": 9612,
+      "type": "file"
+    },
+    {
+      "path": "SECURITY.md",
+      "hash": "90b11e0e093a62d62bbbccf5955598710fc261f8da3b7c721f2ea1f0162a1482",
+      "size": 705,
+      "type": "file"
+    },
+    {
+      "path": "action.yml",
+      "hash": "4ef91833bd0701b1e019c43125575077043e46e651bddd374cbd87ee07418b90",
+      "size": 3967,
+      "type": "file"
+    },
+    {
+      "path": "action/Dockerfile",
+      "hash": "aab94eed7adf58dcfa88ce22ab8d4af9ff22894110685096ec9cccde992ad30e",
+      "size": 3922,
+      "type": "file"
+    },
+    {
+      "path": "action/entry.sh",
+      "hash": "25ace7d6bd3e500935a8f928426ace0b736d22495b73bcdb4fb7eb62880cec16",
+      "size": 1695,
+      "type": "file"
+    },
+    {
+      "path": "action/main.py",
+      "hash": "f8f79531eb3f7542a71c1750263a8525dbe79dabb39d6c30e68e98b9587dd52f",
+      "size": 19298,
+      "type": "file"
+    },
+    {
+      "path": "assets/logo.png",
+      "hash": "c5d050461013a31f082f98f2e46e19132c8c6725344a87114a6b2fd2263b04b6",
+      "size": 703120,
+      "type": "file"
+    },
+    {
+      "path": "cmd/skill-up/main.go",
+      "hash": "1f4b2597314123a46b980a7906ebee5414ba31bf74c1ce929b6ef54b07be0e7a",
+      "size": 410,
+      "type": "file"
+    },
+    {
+      "path": "docs/.vitepress/config.ts",
+      "hash": "fa1d586df573add1ca9b0ddf7d7fe5ed00c0d4137ec3609c0c55c575e9dd29ea",
+      "size": 5167,
+      "type": "file"
+    },
+    {
+      "path": "docs/design/custom-engine.md",
+      "hash": "3f2d80380374339c3708218358bf2c574bb5ea2b1e0706febc1e9dd8a99b77c5",
+      "size": 37272,
+      "type": "file"
+    },
+    {
+      "path": "docs/design/multi-turn-conversation-implementation-plan.md",
+      "hash": "049454733a016183b96d1a6e826b22f801d275dd8a20bdc77573b9de86a3a84f",
+      "size": 22006,
+      "type": "file"
+    },
+    {
+      "path": "docs/design/multi-turn-conversation-implementation-plan.zh.md",
+      "hash": "b58159cf3da972773f6131d6935980b427d374bbdefe07463795c3a612b8dc4a",
+      "size": 20670,
+      "type": "file"
+    },
+    {
+      "path": "docs/guide/ci-maintenance.md",
+      "hash": "5e2a422c7fb556e1652513ee167efda342b2ebf788d3ee144ac4356e4024a412",
+      "size": 12407,
+      "type": "file"
+    },
+    {
+      "path": "docs/guide/cli-reference.md",
+      "hash": "31284df0547b4f593b46adb969d0eba091a41038092b1bd04a96c8b95e07d9dc",
+      "size": 15018,
+      "type": "file"
+    },
+    {
+      "path": "docs/guide/getting-started.md",
+      "hash": "d3688612acb906ced6d3a27f4df342df521e10e5c99e8924516b4c47cb5e282e",
+      "size": 6437,
+      "type": "file"
+    },
+    {
+      "path": "docs/guide/migration.md",
+      "hash": "f44c291d9907bfc5cfccdb81d8cb9f0077a2a2c6497e3f801112520fa3d1b237",
+      "size": 4218,
+      "type": "file"
+    },
+    {
+      "path": "docs/guide/user-config.md",
+      "hash": "b77b2521ae6f81f6cdd2c7e08fa499f203bb6d7285dbc07613f7a0f72309d05c",
+      "size": 7617,
+      "type": "file"
+    },
+    {
+      "path": "docs/guide/windows.md",
+      "hash": "f8a00aaf5dc6be0d25134ea4bb3dd44db0aa7d0b02a2675874d4283d751a15bd",
+      "size": 5078,
+      "type": "file"
+    },
+    {
+      "path": "docs/guide/writing-evals.md",
+      "hash": "01c810bc4c18fb04d3aa5df68a40ee6b8eb7338cda39cc1a62465bf9cb6580b1",
+      "size": 41124,
+      "type": "file"
+    },
+    {
+      "path": "docs/index.md",
+      "hash": "3af6081152018eb9419998d5fbba5f018233249b48a155c06122584ebc289b36",
+      "size": 2522,
+      "type": "file"
+    },
+    {
+      "path": "docs/public/logo.png",
+      "hash": "90e7d3b32d6e6e883b29c30f697e25df10da545be2ba866be4253e857c6df36e",
+      "size": 703130,
+      "type": "file"
+    },
+    {
+      "path": "docs/public/skill-up-overview.png",
+      "hash": "1eed26b0ed677e852fe71f18bdc88a3530b1bc271dca63dfdd8a1d4777348717",
+      "size": 1137013,
+      "type": "file"
+    },
+    {
+      "path": "docs/python.md",
+      "hash": "5a2f8d48fbbe0eff61586b00a6640ab99ea937f5f47d43511d3d85600d3acc5e",
+      "size": 2165,
+      "type": "file"
+    },
+    {
+      "path": "docs/zh/guide/ci-maintenance.md",
+      "hash": "cb8e696707ebd59ae621bc4cb773346149e414913efa2eee9ab6efc4b922138c",
+      "size": 11423,
+      "type": "file"
+    },
+    {
+      "path": "docs/zh/guide/cli-reference.md",
+      "hash": "9e88798b458cf41ed574d0c7b07449b06a3690c4c32ad051c493675ad8383d02",
+      "size": 13757,
+      "type": "file"
+    },
+    {
+      "path": "docs/zh/guide/getting-started.md",
+      "hash": "7d6dc8e959ee3be84dffa7c67176a54229ea787563d2209dbeb7f1b949422366",
+      "size": 6353,
+      "type": "file"
+    },
+    {
+      "path": "docs/zh/guide/migration.md",
+      "hash": "3b756eaad859e7a8dfd595dbe990bd2cc383c17a6c9f8b2378240c94cc55c053",
+      "size": 4263,
+      "type": "file"
+    },
+    {
+      "path": "docs/zh/guide/user-config.md",
+      "hash": "c4c8046b64ad77bdf1d97ff112b9bcec484d6c66d781c1b1a7f74e6b93b74f2a",
+      "size": 7424,
+      "type": "file"
+    },
+    {
+      "path": "docs/zh/guide/windows.md",
+      "hash": "b18c18526eb69463a2a90cfaf52aa1f2dd7a3e45c1bec0f3dafb84c3957bc25f",
+      "size": 4959,
+      "type": "file"
+    },
+    {
+      "path": "docs/zh/guide/writing-evals.md",
+      "hash": "f2303d1d1ac96c93c9f2fd4faee4ebb27dc5cadd52213aa5251b7f649d00edcb",
+      "size": 39370,
+      "type": "file"
+    },
+    {
+      "path": "docs/zh/index.md",
+      "hash": "93b9cd40c420f8b469bd9fb7c6e797c40b687a005d9f3fd7242d36bb9bb242bd",
+      "size": 2509,
+      "type": "file"
+    },
+    {
+      "path": "e2e/agent_test.go",
+      "hash": "09f74c39cc31956208810ed4e047aa7f15b5d7a6ac2f679e873afc65c6cfe7b3",
+      "size": 65636,
+      "type": "file"
+    },
+    {
+      "path": "e2e/cli_test.go",
+      "hash": "7fca49c90b714541161222da545a6dc659ad1c45c56273095456a1049481cdf4",
+      "size": 17767,
+      "type": "file"
+    },
+    {
+      "path": "e2e/contract_test.go",
+      "hash": "dadc7554010273734b0de18abdbf2f547e8e8a1c790f2aee230737084b35b92e",
+      "size": 29486,
+      "type": "file"
+    },
+    {
+      "path": "e2e/coverage.go",
+      "hash": "6cfac4071a5582ab2888f32a4dd546099806d058696f38407ef0ee6f60fae25a",
+      "size": 245,
+      "type": "file"
+    },
+    {
+      "path": "e2e/custom_engine_test.go",
+      "hash": "86351bb7c3efb2ec324b81a2e5068bd22fa38a227019876e73663a15771de067",
+      "size": 9856,
+      "type": "file"
+    },
+    {
+      "path": "e2e/main_test.go",
+      "hash": "d74a8d5c692fac9fe4cb84a8b22613ff5753ee2d2da26c1a3748b0685abe1ab0",
+      "size": 1062,
+      "type": "file"
+    },
+    {
+      "path": "e2e/mcp_test.go",
+      "hash": "50dc744fd936b500d3c9d4b5e3768b02be439046e78aac5b4e5cfb312cfb8d2c",
+      "size": 7429,
+      "type": "file"
+    },
+    {
+      "path": "e2e/pipeline_test.go",
+      "hash": "18090e8685680bb1760bcdad5702802bfa9885878e5f28fd4646a93a3e10e2fb",
+      "size": 12123,
+      "type": "file"
+    },
+    {
+      "path": "e2e/runner.go",
+      "hash": "be2180d6cc1d6c15ce3033c705b5990f67d18be8d034225671197acd77c69a51",
+      "size": 6461,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/agent-judge-criteria/README.md",
+      "hash": "f4e8176a3fad270d4c166f30e62c073b5ebf45bb56712d84877997b5227b2e31",
+      "size": 485,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/agent-judge-criteria/SKILL.md",
+      "hash": "c2b31a29181a9e56a72800e7565212ca10a044e6dfa83f97c2e53752ec0c90f7",
+      "size": 284,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/agent-judge-criteria/evals/cases/detailed-code-review.yaml",
+      "hash": "38ff30ee1d59cbe7aa7f7b5f945ff032b0ab42f9da1b656614f3a8e6ee1d1a24",
+      "size": 1246,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/agent-judge-criteria/evals/eval.yaml",
+      "hash": "dd05cd94e0542341529c0de36ca51499046bbe0cd40ab8cd36fce6602109b4bd",
+      "size": 455,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/agent-judge-criteria/evals/evals.json",
+      "hash": "c9dc4d9ac411edeca2e0271b7d802af9a6093b8fc4c5fcc11ca68dd7bacbcd92",
+      "size": 733,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/custom-engine/SKILL.md",
+      "hash": "056c89b62923b0f54770c14231a3e7f7be85add98277c8306e3d68ce7d446de2",
+      "size": 949,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/custom-engine/agent.sh",
+      "hash": "7cf84a0747e77973e70b310d031f778368b7f1e496243a110fdc1ef0ff03e2ff",
+      "size": 948,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/custom-engine/evals/cases/hello.yaml",
+      "hash": "7bf31421babb4bbd919c139176794ccb92382aa5c0e8d04d4e6d64d5fe78e04d",
+      "size": 161,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/custom-engine/evals/eval-http.yaml",
+      "hash": "f3aad2d8efdf8e73854b64bfb363e0cbf3f16c3c2c81b469bcb28cbb3779f7fc",
+      "size": 475,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/custom-engine/evals/eval.yaml",
+      "hash": "73c0597942dc9d643cb7f9b437bbe7f2075091b2684f8d50f022a7fcbc626de3",
+      "size": 426,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/evals.json",
+      "hash": "93bcb381520922d9eafd591d92d526fe18489ecf9cfbeb1ae760d55bb183ab33",
+      "size": 435,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/expect-short-circuit/README.md",
+      "hash": "1c87bb592c490aedba86d4240577dc792211d3ac0573bc70c431670575e1edb6",
+      "size": 4031,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/expect-short-circuit/SKILL.md",
+      "hash": "e674c371595af2a1aca3330fd66bda216830a27c9c4b424365aca7ba5fa37f21",
+      "size": 1038,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/expect-short-circuit/evals/cases/basic-arithmetic.yaml",
+      "hash": "c49043361903a3b9317e6453fabc4088aeb8a61ff7b99525ecf93d50c57ba964",
+      "size": 673,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/expect-short-circuit/evals/cases/exit-code-mismatch.yaml",
+      "hash": "aae7002be973e8f8a9ae2edc7f886524d5874901140978d3bc1c84117fbc977f",
+      "size": 505,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/expect-short-circuit/evals/eval.yaml",
+      "hash": "77c86ff9eecbecfaeafa4d9ea3a73bc1c34fb2ec8db77894b3f0423326d872e4",
+      "size": 543,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/expect-short-circuit/evals/evals.json",
+      "hash": "f8b1817d2f1e4f7ea1662ab4b2c466d1dd08c541550211bbd1b4a601885ea4c5",
+      "size": 391,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/expect-short-circuit/fixtures/expected/basic-arithmetic-grading.json",
+      "hash": "dc118c43d11c7d41966b659c9813c69fc6b93e93d9a4ec97044588bc6417c2fe",
+      "size": 514,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/expect-short-circuit/fixtures/expected/exit-code-mismatch-grading.json",
+      "hash": "b309fe0b80181a05aac490f8fd54e6956dfa6669e023ebdb081b9a669087a136",
+      "size": 487,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/expect-short-circuit/fixtures/judge-inputs/basic-arithmetic.json",
+      "hash": "a5344f606193b183e171b00a446aae5df0161da12d77d1a6a26ae0302563ea28",
+      "size": 942,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/expect-short-circuit/fixtures/judge-inputs/exit-code-mismatch.json",
+      "hash": "21c15b793ba697c8ea92c73b922da942cfe47c53497830dc09316dec50ec3cd8",
+      "size": 763,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/file-and-tool-rules/README.md",
+      "hash": "8706a70f4e1b15f3a61584279050c543db8beeabb73fc282bb705f0dae1dea39",
+      "size": 4278,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/file-and-tool-rules/SKILL.md",
+      "hash": "5df03619b5fba5452d7cc452a196226e290e64cedaa024361f5cca45d47c3045",
+      "size": 1540,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/file-and-tool-rules/evals/cases/organize-project.yaml",
+      "hash": "237bb5c7c3f476f584265d7da99f9c793fcec529b4ff78bcce2bce1be2faf229",
+      "size": 918,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/file-and-tool-rules/evals/eval.yaml",
+      "hash": "67edd6684fa06010dff56de27286904253f341c2decd16f26d72643bf1d931f0",
+      "size": 515,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/file-and-tool-rules/evals/evals.json",
+      "hash": "89608bb8d006fd27012709d800b1842b0dc51e56654d0e6a3c58d748b8ccfef6",
+      "size": 519,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/file-and-tool-rules/evals/fixtures/golden/expected-report.md",
+      "hash": "8df1c76172ec6af35113fdbab81bd8b507e50ea31c31106bd72ea6f409efc2e7",
+      "size": 77,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/file-and-tool-rules/evals/fixtures/workspace/README.md",
+      "hash": "370d0ac73c967e3b3a41977179032d13fb2b52387f489eabe069d395e1c5b592",
+      "size": 57,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/file-and-tool-rules/evals/fixtures/workspace/src/main.go",
+      "hash": "a4daedf284b31519fccb22a11acc0b3053b2e70fe1ad0592ae51761cb1193aaa",
+      "size": 48,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/file-and-tool-rules/fixtures/expected/organize-project-grading.json",
+      "hash": "3f591e993291d6ed178cc4bffa2219b0d89c27aada6b116f18f72e0691df1626",
+      "size": 670,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/file-and-tool-rules/fixtures/golden/expected-report.md",
+      "hash": "4ed6ed881187ea7c1f80302f7109a9017a4af3cad03e19f2ab190ef0282cbad8",
+      "size": 490,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/file-and-tool-rules/fixtures/judge-inputs/organize-project.json",
+      "hash": "51e8e13552f69bdb2c1dbf0469f8774227669a22e8f0877c05f181c87294811d",
+      "size": 3580,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/file-and-tool-rules/fixtures/workspace/report.md",
+      "hash": "4ed6ed881187ea7c1f80302f7109a9017a4af3cad03e19f2ab190ef0282cbad8",
+      "size": 490,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/file-and-tool-rules/fixtures/workspace/summary.json",
+      "hash": "6601810ded1e77149960e6f31c46f141e243e115dc078e554fb62a3f8bfb16a3",
+      "size": 238,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/full-report-pipeline/README.md",
+      "hash": "3a864d40dc2b1fa2bc0ded501d20f8bee1501db23f04fdaded6c4e0645a84a9f",
+      "size": 4928,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/full-report-pipeline/SKILL.md",
+      "hash": "59a3ca1b31c97ef03cba115d0d9b63236acce058b0f4b41c1e4869c6c28dc2bf",
+      "size": 1253,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/full-report-pipeline/evals/cases/error-case.yaml",
+      "hash": "26df74efb0b2436d9231fc2de3fcd4d23af80efbd5aeaf9edb5bf6ec9f39d54b",
+      "size": 486,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/full-report-pipeline/evals/cases/fail-case.yaml",
+      "hash": "e93e1bf50b37a3ea66e630cfa4ea396976daf26196ab8be2d97a5e8a85a19fe6",
+      "size": 653,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/full-report-pipeline/evals/cases/pass-case.yaml",
+      "hash": "22a92ad31a1d0663fca4e52a15637f851584c743b4794fb04f16d529bb9ef73a",
+      "size": 660,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/full-report-pipeline/evals/cases/skip-case.yaml",
+      "hash": "c017d0b0bd0ac8c7357621d5877967c2ea6493f5b33cb2ca8f7a196d84887aec",
+      "size": 554,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/full-report-pipeline/evals/eval.yaml",
+      "hash": "98c3eb270c773f86f042bea5140c3310e0048df2e1bfa4476b83048bfc1b5faf",
+      "size": 670,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/full-report-pipeline/fixtures/expected/benchmark.json",
+      "hash": "b035bf6d9baca91c56543b85f28248846fa9a194547593b8d54bf5df6ccbfa46",
+      "size": 1476,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/full-report-pipeline/fixtures/expected/eval-metadata.json",
+      "hash": "22c3b07a4af014e8a237b608007f4efbb2a80f98c487c8a4efeccbbb947f3029",
+      "size": 231,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/full-report-pipeline/fixtures/expected/grading-fail.json",
+      "hash": "8c96b3fa061fe5d3da56d729cd2488a02325c36ec1b7f7ef2b65da2e9694f6ce",
+      "size": 419,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/full-report-pipeline/fixtures/expected/grading-pass.json",
+      "hash": "cd39169025fb5fb34ee521c80056e0b9d36483e8023e1b5bd6bc5ad614296e9b",
+      "size": 388,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/full-report-pipeline/fixtures/report-input.json",
+      "hash": "01a9b79051f0179ab3e153f3901a0afd90210c1689a5116696fe2fb965970e06",
+      "size": 2844,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/full-report-pipeline/report.html",
+      "hash": "630bb03bb7344af8f13cc7307e13d9e9d2fdbbdde8743e0c09e42aee76ae2cf8",
+      "size": 57476,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/full-report-pipeline/report.xml",
+      "hash": "ad40003d6e41bdd304ee5faba069c2a330e6b9b4ff50368be5b1aeeed167bc7d",
+      "size": 1057,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/full-report-pipeline/result.json",
+      "hash": "34238aa5c214bac24f925b8de4773c9d42c4c9cdfa4fb4a8c0bbbbd5f89310dc",
+      "size": 2782,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/git-context/README.md",
+      "hash": "a9999ad3f956135a7f9a31617a0dc5227e3953841b1e694a190aa3abe779d3b6",
+      "size": 386,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/git-context/SKILL.md",
+      "hash": "b86b679121ce3371108ac947901e4025df4cad6595d56d88bed1df7b30919f50",
+      "size": 228,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/git-context/evals/cases/apply-diff-and-review.yaml",
+      "hash": "c8d6d7b12efaba02727fe49543c37a5e049e333874b835e3875ec753ba26b51b",
+      "size": 655,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/git-context/evals/cases/check-remote-url.yaml",
+      "hash": "6e35c3e7deb2df9d50300a1d1c06b0c5a508eb03a19c75bcfe46904fc5a40497",
+      "size": 591,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/git-context/evals/eval.yaml",
+      "hash": "28df7793cebb955d227a5681f74d62d148601df8e5e04b115dfd8351fd9a0d08",
+      "size": 497,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/git-context/evals/evals.json",
+      "hash": "21ac34b14a8e3c434e75bd4c7b88404ef5683884c4154901b338da2da2e4fd88",
+      "size": 557,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/git-context/evals/fixtures/diffs/sample-bug.patch",
+      "hash": "50421466ba7a5c0c34c9dddcf5bb633eb51c83d171c5567750856992cfd7e9a3",
+      "size": 265,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/mcp-case-overrides/SKILL.md",
+      "hash": "00bca6c96a85852bffc98cd7beb665330710b1da78b171c80c495352438dd516",
+      "size": 224,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/mcp-case-overrides/evals/cases/project-closed.yaml",
+      "hash": "30ec79e344d738061d099e9b9a21cd25f20e6ce51ba380d6b0e1edf041d4e1d3",
+      "size": 443,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/mcp-case-overrides/evals/cases/project-open.yaml",
+      "hash": "08992679bed7e61bcf9af940c0e2872d0df681849f84536ef63b6923f1d78ce2",
+      "size": 435,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/mcp-case-overrides/evals/eval.yaml",
+      "hash": "7823718bf3622a96f5bf328d9b8be07bc3bec735b4129cea0c00bb3d91ff210c",
+      "size": 519,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/mcp-case-overrides/evals/fixtures/mcp/project-closed.yaml",
+      "hash": "843f21c214c5ce691e091ce28e91343334c43c26ad79843268c84379361b31b5",
+      "size": 86,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/mcp-case-overrides/evals/fixtures/mcp/project-default.yaml",
+      "hash": "2d812119c3b72166f56c632585b5acf893c2baabeffce7f151a6af02891e50e0",
+      "size": 87,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/mcp-case-overrides/evals/fixtures/mcp/project-open.yaml",
+      "hash": "f632a949a2198094a4a8c14295656b5764da8a14ad5cd8c0143629f84ed5a362",
+      "size": 84,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/mcp-mocked-marker/SKILL.md",
+      "hash": "b9234a3a9203f1014e2e41af22e83d3323938495a914146dc4681859bb8ce757",
+      "size": 180,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/mcp-mocked-marker/evals/cases/smoke.yaml",
+      "hash": "00775529021e62a371129e9ec689103fb1bf95aa3832b691e54b790258eb4571",
+      "size": 305,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/mcp-mocked-marker/evals/eval.yaml",
+      "hash": "e2c6611b8aa9362aad207513034a2ec65c6f86e050a5d6ae88e1f7c44ab0d719",
+      "size": 458,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/mcp-mocked-marker/evals/fixtures/mcp/marker.yaml",
+      "hash": "d85abb8e8d39422955952ee416e2639f6faecfdea6bf8de2072e5c2741025112",
+      "size": 82,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/mcp-stdio-marker/README.md",
+      "hash": "9eccf715ff98a0458e726d02aed356be33b0063d3ce640063c1f4f6fc9256e07",
+      "size": 622,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/mcp-stdio-marker/SKILL.md",
+      "hash": "611a705fb6f2defc5b2896648406627cbb7a7c4f06785779b08f459c17983049",
+      "size": 177,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/mcp-stdio-marker/evals/cases/smoke.yaml",
+      "hash": "888c1e0a726842d877011d3c565aca6eea3589711229d4aeca395ffdfee4b985",
+      "size": 296,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/mcp-stdio-marker/evals/eval.yaml",
+      "hash": "c701b45c80b74592160d80aed3911d902974313c5618d5493ae66c0e13c4bcc6",
+      "size": 3448,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/mock-engine/SKILL.md",
+      "hash": "ed937075206ae77b2b6268608fd88bbf200c22f35277fe1fa7589bfb3d715dfb",
+      "size": 89,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/mock-engine/engine.sh",
+      "hash": "220a3fc93343ebf065c0acc0104b3ff734474ea37ea99427547b08aaf76aa968",
+      "size": 5559,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/mock-engine/evals/cases/must-contain-fail.yaml",
+      "hash": "3fba864cead1f05b00488b8a155719beb3ba2f07b6af3ed3de46c18964a0766a",
+      "size": 197,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/mock-engine/evals/cases/must-contain-pass.yaml",
+      "hash": "eeeddc87892fa4faf03ab1ed56009756f22adfa6510ff8f267bb138d1c1852d1",
+      "size": 250,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/mock-engine/evals/cases/rule-based-pass.yaml",
+      "hash": "de7765b3a56a8b4c567eadde31faefcac825aa2945fbd9e39e9a24b2e56dc527",
+      "size": 267,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/mock-engine/evals/cases/script-judge.yaml",
+      "hash": "8230d0f6d65fe3c789fa5c2a874ea3c7e13c8d3d99bb2c8f36e49a232072d63a",
+      "size": 209,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/mock-engine/evals/eval.yaml",
+      "hash": "3f7c0446e340ca499fb5e986cd648f00070a5816c062b4f8e53ad05f0411a0a1",
+      "size": 466,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/mock-engine/evals/fixtures/scripts/check-null.sh",
+      "hash": "01db56737ea2d6c00acd0dd474efe0cc437596a69e7ff4786b51bcb947bebc8d",
+      "size": 304,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/multi-turn-conversation/README.md",
+      "hash": "72e640c05c385a9f67494d51fe11243f16032274513fce41e802eedd7fc08413",
+      "size": 588,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/multi-turn-conversation/SKILL.md",
+      "hash": "d06ef91e10ccb786f6e37e6c8dfbb1ba44abd9be3e66a70548ded5323c65534a",
+      "size": 487,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/multi-turn-conversation/evals/cases/multi-turn-refinement.yaml",
+      "hash": "3cc9e0cbe872e05f07f21cfabd10f2dcb8c5d9360f618b914ad8d69ae6296288",
+      "size": 1441,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/multi-turn-conversation/evals/cases/phase-gate-skip-attempt.yaml",
+      "hash": "6bec3ab1989d204f84d2d72512e79785096448e71a0b8e3427acc5222ae2f7c3",
+      "size": 1271,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/multi-turn-conversation/evals/eval.yaml",
+      "hash": "ab0ae27709f8ce32245e3a00027d916b28ffcb25f0461f2be014fe377ade4e42",
+      "size": 505,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/multi-turn-conversation/evals/evals.json",
+      "hash": "c3f2d0eac964557bc0e2d95df3870838d53ec493fbb558ad77ae86a89770984a",
+      "size": 988,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/retry-and-parallelism/README.md",
+      "hash": "1f9636b5b68c408f1dfb4cec47a386ed843a1f0159338bbfcc10c324f49381d9",
+      "size": 976,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/retry-and-parallelism/SKILL.md",
+      "hash": "ad48f2a93f258091a13abaa772a054aaf4022aaf27cb71ea2b5033ee73035789",
+      "size": 189,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/retry-and-parallelism/evals/cases/flaky-success-retry.yaml",
+      "hash": "0a3f6b654f22a972084621228483da5bcbf26b32879ef47097ec2b583def0d3f",
+      "size": 739,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/retry-and-parallelism/evals/cases/second-case-parallel.yaml",
+      "hash": "6bdb2955a46cba1e456ab9f0cd033bd71d395078c41f0c7ebc0d825031cfb77f",
+      "size": 579,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/retry-and-parallelism/evals/eval.yaml",
+      "hash": "3b2e4ab945f74c82742a7502178174a6050405097bd538477f8d2c992c090554",
+      "size": 564,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/retry-and-parallelism/evals/evals.json",
+      "hash": "f6b6cb34bb7573c056ddf5902b8f096ce9a7d1af1a4f1493451798ade6ccb4b6",
+      "size": 429,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/sandbox-mcp/README.md",
+      "hash": "07771fe9e109eb4ab40c844961e6b43266eba27b59610c8500326b5c0821c502",
+      "size": 744,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/sandbox-mcp/SKILL.md",
+      "hash": "48aebf9441b2207baaaf7326a13b53c5f2dca2a5fec610ac2c5955fa91410d5d",
+      "size": 225,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/sandbox-mcp/evals/cases/python-run.yaml",
+      "hash": "c0b42ccd58241b6e93abe21813aa6588c407c74a20a4b659f799af99f45a9358",
+      "size": 855,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/sandbox-mcp/evals/eval.yaml",
+      "hash": "f1580e826eeaec81425341262bb5e80c3c384f4fcb5045ad5ef16a238c5488b8",
+      "size": 475,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/sandbox-mcp/evals/fixtures/mcp/agent-sandbox.yaml",
+      "hash": "3086db3b84f045a8af549dd0f0730035ab8babdbb2d835971d11471a946cfe10",
+      "size": 316,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/script-judge-eval/README.md",
+      "hash": "1865c73835ecb5649612d32e68a9700a5c8f7f775300fec9a6ebd0119e1601ce",
+      "size": 3965,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/script-judge-eval/SKILL.md",
+      "hash": "dc1f09af4d8c6f503ee01dc1543681d9c900c05b7f5f9dc4e002210d4ac236bf",
+      "size": 1394,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/script-judge-eval/evals/cases/csv-to-json.yaml",
+      "hash": "9b257d63db137ff8bafa817a53c448bc3d478c3e1f7a1e2e04bd29554ec65321",
+      "size": 794,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/script-judge-eval/evals/eval.yaml",
+      "hash": "7b10d1bc1f02b257f3ab5a6b65544ca3857d54a208e2a60d31c55ed72def79c7",
+      "size": 463,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/script-judge-eval/evals/evals.json",
+      "hash": "b770983e4d2ddcdd4763a2e470f72d53ec32f7936877900b61f114cb971620c5",
+      "size": 433,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/script-judge-eval/evals/fixtures/workspace/input.csv",
+      "hash": "5d665c91f30f94068c7b42b32fd4c805b52de08c9f07aa1d7bcf00acf92e505e",
+      "size": 70,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/script-judge-eval/fixtures/expected/csv-to-json-grading.json",
+      "hash": "f938f203b2aa06383c054595da9658dae3bde400631cce6df64ff9cd698d3486",
+      "size": 425,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/script-judge-eval/fixtures/judge-inputs/csv-to-json.json",
+      "hash": "e8183d01e51d133b71b6204cfbd471a566925e64acaf732c96c66c3b1b5f598a",
+      "size": 2275,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/script-judge-eval/fixtures/scripts/check-transform.sh",
+      "hash": "0a327371341cdc895572eb83a12737ab9af1eb451fe126d935733d5df6c1641b",
+      "size": 1720,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/script-judge-eval/fixtures/workspace/input.csv",
+      "hash": "d4636216bd0ab1914038e8766bb24f69da8e55081d361debfa8909a07479eb49",
+      "size": 131,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/script-judge-eval/fixtures/workspace/output.json",
+      "hash": "bffee5d1619a721a0685af40581dfdd1afd903c5989bc2bed73b4099cea53554",
+      "size": 328,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/text-match-rules/README.md",
+      "hash": "91db9459e84107832a48ee51764abecdb98484795c9bbaf5becc500663339c5e",
+      "size": 3908,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/text-match-rules/SKILL.md",
+      "hash": "1bb0f59df73bc6422ec45f8c7ed47ae4be2235e9c5f85488defd9b549f8530b6",
+      "size": 2071,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/text-match-rules/evals/cases/find-null-bug.yaml",
+      "hash": "64d3d4495d5aa9f5d23f571e5b484c65986839f1841213f8d0ae000c785f3575",
+      "size": 1245,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/text-match-rules/evals/cases/miss-boundary-check.yaml",
+      "hash": "72e5244c2b6630868162b64bab6abcc21aacc2bf2ee90e4a410c49b45e7619f5",
+      "size": 1130,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/text-match-rules/evals/eval.yaml",
+      "hash": "45a61f878cbadd1064ff5deb61ce0ef8c25975275e5be9824ad695b04fd22d5b",
+      "size": 515,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/text-match-rules/evals/evals.json",
+      "hash": "af1ff2957a79f417b91a496363b673b6a0406b21a1a7bbfc1199c88a4a9342f4",
+      "size": 662,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/text-match-rules/fixtures/expected/find-null-bug-grading.json",
+      "hash": "49e375e842fd4998b29bd25f977c5a64ac8a2146b559e53c428a38a3de06a68e",
+      "size": 619,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/text-match-rules/fixtures/expected/miss-boundary-check-grading.json",
+      "hash": "e05f1e5c7724fbb7781a74acbddf212a07af59a9bce6d5d275a71bba10777565",
+      "size": 675,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/text-match-rules/fixtures/judge-inputs/find-null-bug.json",
+      "hash": "708646737a56871ed67e8dcf178712c1e969e2aedf5f963c595afc70253725bb",
+      "size": 3186,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/text-match-rules/fixtures/judge-inputs/miss-boundary-check.json",
+      "hash": "f7e90c63a6fc9c31be5013c08dce7536dc7185d8fbe0c5cd34d0cfa87bda3ab4",
+      "size": 2091,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/trigger-detection/README.md",
+      "hash": "71d4b8e686c516f032ba554e33ad56936775bd8f3e4a676f42425f9ab5189583",
+      "size": 4072,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/trigger-detection/SKILL.md",
+      "hash": "9174956d7543e96a9e25ba1762f3ac72b9bdc03f16ebc40e03d0e4d498d2826c",
+      "size": 1540,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/trigger-detection/evals/cases/detect-boredom.yaml",
+      "hash": "ac336e8aff86796ed8c849037bf2d739f22fa223d10c20e2759687004de39e72",
+      "size": 711,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/trigger-detection/evals/cases/detect-frustration.yaml",
+      "hash": "3191eb73fd73929c3ac6dfa84e946414e15b98e35179c2d36fd899dbb568e41d",
+      "size": 684,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/trigger-detection/evals/eval.yaml",
+      "hash": "63bb6e699160650b39e66f36242e964fbf132bc6beb1d40962ca78a9a438fb80",
+      "size": 514,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/trigger-detection/evals/evals.json",
+      "hash": "4e2226585e5d1e7dc9b5b510904b955424953c6ef8aa8c229150bb260c2ede54",
+      "size": 710,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/trigger-detection/fixtures/expected/detect-boredom-grading.json",
+      "hash": "40d9cbd433081ab8ed5f924e03fa0eacc9cecba8047f5a2c6951011c1e67461a",
+      "size": 350,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/trigger-detection/fixtures/judge-inputs/detect-boredom.json",
+      "hash": "694f4217d68781370b82ec80a4adfa8f1330e87982666031461fb098b009c8e5",
+      "size": 1555,
+      "type": "file"
+    },
+    {
+      "path": "e2e/testdata/trigger-detection/fixtures/judge-inputs/detect-frustration.json",
+      "hash": "c1b124f7e08f09ec7a1127ebd4ea5f06ca8446c47ff38f41908a38cbc05a2d6f",
+      "size": 1856,
+      "type": "file"
+    },
+    {
+      "path": "e2e/userconfig_test.go",
+      "hash": "04805a79b97912d13cc4ad01467aea3374847ccb056eb1e8309ca1673174af4e",
+      "size": 3927,
+      "type": "file"
+    },
+    {
+      "path": "examples/code-stats/README.md",
+      "hash": "ec9532a26eb4a78726ef218199d9d85616688ffdfd4696ff21dec038ffbd1073",
+      "size": 2192,
+      "type": "file"
+    },
+    {
+      "path": "examples/code-stats/SKILL.md",
+      "hash": "144295e02e4026d40b0f2753f9777f17f2c255e9e589947a26b70b67b0a6a69e",
+      "size": 2008,
+      "type": "file"
+    },
+    {
+      "path": "examples/code-stats/evals/cases/analyze-directory.yaml",
+      "hash": "171a29ae2b948a96156e455803c970765a0672822e5e8a69a8cb092875e4a569",
+      "size": 765,
+      "type": "file"
+    },
+    {
+      "path": "examples/code-stats/evals/cases/current-directory-format.yaml",
+      "hash": "a2b7f9c94b20fb8360b029041a543923ff4b4c5dc262dbda5e4de47f3b9de4a5",
+      "size": 873,
+      "type": "file"
+    },
+    {
+      "path": "examples/code-stats/evals/cases/top-extensions.yaml",
+      "hash": "d4b4e9a990d7aa51f1f2e3be9306f0bd797c6c5c5a8a71ed76f28c55d1ba59d8",
+      "size": 718,
+      "type": "file"
+    },
+    {
+      "path": "examples/code-stats/evals/eval.yaml",
+      "hash": "52b88e4b6ac6613b8c9dceb3b5a6317863353d4088e2c2a70edead713b46f680",
+      "size": 728,
+      "type": "file"
+    },
+    {
+      "path": "examples/code-stats/evals/evals.json",
+      "hash": "4b2b9919a76e298b4dc02c0ed7f36f2743af5eccab16a0b2304480e783f2b64e",
+      "size": 1874,
+      "type": "file"
+    },
+    {
+      "path": "examples/code-stats/evals/fixtures/repos/sample-project/README.md",
+      "hash": "c059daa7956df72d472bb0386a6d8d6a4c115f8a68ad8f06ad9653d200d48555",
+      "size": 76,
+      "type": "file"
+    },
+    {
+      "path": "examples/code-stats/evals/fixtures/repos/sample-project/main.go",
+      "hash": "43267daa196e560942edfaa07aaf610b209eb9d377814104f774738b34bafdb7",
+      "size": 143,
+      "type": "file"
+    },
+    {
+      "path": "examples/code-stats/evals/fixtures/repos/sample-project/util.go",
+      "hash": "1f7226f773d5c37afc82113d457157761cb2756fb9b7209f150fa31668549fdb",
+      "size": 134,
+      "type": "file"
+    },
+    {
+      "path": "examples/code-stats/evals/fixtures/scripts/check-stats.sh",
+      "hash": "e433137285e45284be6481bcbef3f2af7841e301e25d33f1c2619d471c167141",
+      "size": 1899,
+      "type": "file"
+    },
+    {
+      "path": "examples/judge-debug-agent.json",
+      "hash": "35951b92536f4e71777a3ed1a78bda825c552b96e18173bc15c1bf43b727a499",
+      "size": 1293,
+      "type": "file"
+    },
+    {
+      "path": "examples/judge-debug-demo.json",
+      "hash": "04dd3160e31f329e74e712c432a3dea5ee99fbf57ae52a24446d95da04886cf3",
+      "size": 1127,
+      "type": "file"
+    },
+    {
+      "path": "examples/judge-debug-eval.ps1",
+      "hash": "dd234f3620698ec24516090236ca93695b2c45702604227b4d8758f4805d24d4",
+      "size": 544,
+      "type": "file"
+    },
+    {
+      "path": "examples/judge-debug-eval.sh",
+      "hash": "a83fb163b4eed59cf7d4f18e288bfc85fe85c303d257c6f6ef05799206253909",
+      "size": 430,
+      "type": "file"
+    },
+    {
+      "path": "examples/judge-debug-fail.json",
+      "hash": "2852a9d184a621824635034dd2e7317abe7aeb6ffcac8c1c91baa4932018a7f9",
+      "size": 355,
+      "type": "file"
+    },
+    {
+      "path": "examples/judge-debug-script.json",
+      "hash": "80ad97ac1975348ff970e2caacaf09f32986b296649291fb7bbf4e4647b1e2a5",
+      "size": 316,
+      "type": "file"
+    },
+    {
+      "path": "examples/python-basic/SKILL.md",
+      "hash": "aa3e44f54a95a333235c057ef7bfd41946bdc29fb7510d73d64a0401e53cf16e",
+      "size": 196,
+      "type": "file"
+    },
+    {
+      "path": "examples/python-basic/evals/cases/find-null-bug.yaml",
+      "hash": "b157fa85d88a5641ed1e2b71df656c82de4dab4e6d5c3eda126f45877ae8d105",
+      "size": 179,
+      "type": "file"
+    },
+    {
+      "path": "examples/python-basic/evals/eval.yaml",
+      "hash": "abe3143c73cb7ee614968b1b7410f6761dfd98e2c7401b27b0416e5fc0f8a353",
+      "size": 359,
+      "type": "file"
+    },
+    {
+      "path": "examples/report-debug-demo.json",
+      "hash": "4ecb5c2664172024cb22700b5e6bffc5bca74006fc5fd821357ce966cfdcd338",
+      "size": 2209,
+      "type": "file"
+    },
+    {
+      "path": "go.mod",
+      "hash": "df9dd5dce245cb0e4c293a28358f2bbb9eefd8c64547b1c78af6a599b66c59aa",
+      "size": 1830,
+      "type": "file"
+    },
+    {
+      "path": "go.sum",
+      "hash": "2732d12cc60c70f1a728c397f38d87193ef8c56bed32bdc52753c3ebf469d3f3",
+      "size": 9172,
+      "type": "file"
+    },
+    {
+      "path": "install.sh",
+      "hash": "2b7fbea303dc8b6feb09db6f9cc7307fb9263ff6cc4b0c68cdfe9c2897d109ef",
+      "size": 2902,
+      "type": "file"
+    },
+    {
+      "path": "internal/agent/README.md",
+      "hash": "7a936b43dc77fd18f625b1d061ff3330673558c349f538530ece02061a0b00e2",
+      "size": 11531,
+      "type": "file"
+    },
+    {
+      "path": "internal/agent/agent.go",
+      "hash": "f2ec3b02c8686ee6e803784e6d8f013870b59648918a25604c36e04c0d868e4b",
+      "size": 15214,
+      "type": "file"
+    },
+    {
+      "path": "internal/agent/agent_test.go",
+      "hash": "a209b7897643caf5406ee26a70d187342cebd3c26b6cbde3dc52ca38eddabada",
+      "size": 25033,
+      "type": "file"
+    },
+    {
+      "path": "internal/agent/claude_code.go",
+      "hash": "b461dd0176677753528f96bd35b85ca90cdb37058c287ea9c66d08cb491c6107",
+      "size": 35244,
+      "type": "file"
+    },
+    {
+      "path": "internal/agent/claude_code_test.go",
+      "hash": "a49992ab8b51b32e8b0f9dd5ea5179e689ec33997456f10fa8f3767db73c9016",
+      "size": 31538,
+      "type": "file"
+    },
+    {
+      "path": "internal/agent/cli.go",
+      "hash": "1a23e21527591a84034725e2c3ff5c60c6951188a91266000b3daad89ddfff44",
+      "size": 6310,
+      "type": "file"
+    },
+    {
+      "path": "internal/agent/cli_test.go",
+      "hash": "43910557ececda7498db5477bb6f27dd1c67bca6e935777e4d3289e9070bef84",
+      "size": 9255,
+      "type": "file"
+    },
+    {
+      "path": "internal/agent/codex.go",
+      "hash": "13389b08c08458da85f348b27c86745ca8214a176d2624b736b29b7b9daf9f57",
+      "size": 35770,
+      "type": "file"
+    },
+    {
+      "path": "internal/agent/codex_test.go",
+      "hash": "398ec78986ff097bab74ab68d3abc96536fe25e90e26bcb0100120885b0722a4",
+      "size": 43525,
+      "type": "file"
+    },
+    {
+      "path": "internal/agent/custom.go",
+      "hash": "072517c55126f1da4f2cb3e904f4ed92d89d51bb801486d27fe09a6081859d01",
+      "size": 51883,
+      "type": "file"
+    },
+    {
+      "path": "internal/agent/custom_artifact_url_test.go",
+      "hash": "e476f24805cdbc218c75dd9979b2dd59063bb628e6055a696509ff3b27e4a515",
+      "size": 10533,
+      "type": "file"
+    },
+    {
+      "path": "internal/agent/custom_http.go",
+      "hash": "5bb08cfccb5d31801769edb4c4e8785c22b1404cc3edabe573866745c75f1c40",
+      "size": 9732,
+      "type": "file"
+    },
+    {
+      "path": "internal/agent/custom_http_files.go",
+      "hash": "7c5d922aa6b45e1d424c5545f369d8c69ae19ba184a5b949313ca3a5ead1015d",
+      "size": 6799,
+      "type": "file"
+    },
+    {
+      "path": "internal/agent/custom_http_test.go",
+      "hash": "f58c8d811e8ff0ff62efc2c05cc9909ed0dcf3c0b5686f507d6dde14816bbe21",
+      "size": 16588,
+      "type": "file"
+    },
+    {
+      "path": "internal/agent/custom_local.go",
+      "hash": "2c748c740cebc4d35e1c7c856c8ee29974433f9605377ceb0f82b0628d186f7f",
+      "size": 4601,
+      "type": "file"
+    },
+    {
+      "path": "internal/agent/custom_test.go",
+      "hash": "20f41f94253fa5b865e4953afcdcdaa89874bccaa49c56c0138078a63b495ea8",
+      "size": 39893,
+      "type": "file"
+    },
+    {
+      "path": "internal/agent/errors.go",
+      "hash": "8995ee19c84c6598608d9a9217d6326d9131cf521d8e769ba25dc7207cc94f16",
+      "size": 342,
+      "type": "file"
+    },
+    {
+      "path": "internal/agent/factory.go",
+      "hash": "c80254675550b7efc45dbcdd37f787744396e478327881a1514dd68f91c21f91",
+      "size": 3199,
+      "type": "file"
+    },
+    {
+      "path": "internal/agent/kwargs.go",
+      "hash": "804595dce33802c69ac467e0c4ea75af5d52db6eeeef0088a41c8353d15c0858",
+      "size": 1969,
+      "type": "file"
+    },
+    {
+      "path": "internal/agent/kwargs_test.go",
+      "hash": "1077cded1df5886289f028bfc7f426680dc76105aa36ca9786e460bafce29130",
+      "size": 3855,
+      "type": "file"
+    },
+    {
+      "path": "internal/agent/log_capture_test.go",
+      "hash": "674a38d7c8058490de98e9bed514de7e381bc812d23999ad228cd4d92f834523",
+      "size": 438,
+      "type": "file"
+    },
+    {
+      "path": "internal/agent/mcp.go",
+      "hash": "47fe30e6dfdf7993ba2bb69734edd04a19a4bbff03783faea44b913946a92844",
+      "size": 5353,
+      "type": "file"
+    },
+    {
+      "path": "internal/agent/mcp_test.go",
+      "hash": "93edbd7c889c62784caac9e55384386688afc6a5a43cb36f0f721838bf373293",
+      "size": 8010,
+      "type": "file"
+    },
+    {
+      "path": "internal/agent/node_install.go",
+      "hash": "52fe5648dfd3ce8cdfd7a8f8583e7b28efad0892a14ac95d52ab2876f32dd8f8",
+      "size": 5072,
+      "type": "file"
+    },
+    {
+      "path": "internal/agent/node_install_test.go",
+      "hash": "c0f6bcbb2acedd211d001e437cf0ca8499dd1074f812632df8600f76f89ef021",
+      "size": 5605,
+      "type": "file"
+    },
+    {
+      "path": "internal/agent/prompt_delivery.go",
+      "hash": "e8df4174dc1c7be221a68d555802fd3dcb5cf510c81697685a2763df5b7a5cf6",
+      "size": 2829,
+      "type": "file"
+    },
+    {
+      "path": "internal/agent/prompt_delivery_test.go",
+      "hash": "893e96247fd83f0347ed354592b6affadff781d233bb3fdf3369a405e35898e7",
+      "size": 5196,
+      "type": "file"
+    },
+    {
+      "path": "internal/agent/qodercli.go",
+      "hash": "c17ee87634742bceb57fa1d2f724ddd21133927656e861554a5f8f1180bc2402",
+      "size": 10647,
+      "type": "file"
+    },
+    {
+      "path": "internal/agent/qodercli_test.go",
+      "hash": "d83985f0f35a2f9b1be638c480095257d4db28fd01a3985f6e5972b0952d355e",
+      "size": 18203,
+      "type": "file"
+    },
+    {
+      "path": "internal/agent/qwen_code.go",
+      "hash": "445df437be85750a93ad92c446f6da69c77b9572797b03b9f129d3c38dd7c5c9",
+      "size": 15589,
+      "type": "file"
+    },
+    {
+      "path": "internal/agent/qwen_code_test.go",
+      "hash": "0eba1a6b0d45cee8cc4ad8e6859672fc5d5acb230f95be9bc3cbacb5080b08e6",
+      "size": 12270,
+      "type": "file"
+    },
+    {
+      "path": "internal/agent/session_lookup.go",
+      "hash": "1b395f4f49252c3a840cae362a390df310ec772012fda8c1de93fcb1bd032136",
+      "size": 7248,
+      "type": "file"
+    },
+    {
+      "path": "internal/agent/skill.go",
+      "hash": "c393dbdc4063a8623ec8e14a45b66b64f0a87e66efbdb0aac215fbf8041a6944",
+      "size": 3585,
+      "type": "file"
+    },
+    {
+      "path": "internal/agent/tool_status.go",
+      "hash": "42e5eff88d484ea292d461f51867ff3a2ca1d92b73cbdbc0f2156238c138e893",
+      "size": 85,
+      "type": "file"
+    },
+    {
+      "path": "internal/agentkind/agentkind.go",
+      "hash": "ee4341e7ee9be3b17ce69cdabb8cc9db8d3b3e55d558578f8a074c6aec2e0311",
+      "size": 1262,
+      "type": "file"
+    },
+    {
+      "path": "internal/cli/command_integration_test.go",
+      "hash": "e779980e15deeae7a5ed14eb9e9c5c05ee9a5428cb5e797c7c7f94db92acb584",
+      "size": 2215,
+      "type": "file"
+    },
+    {
+      "path": "internal/cli/debug.go",
+      "hash": "abc83c668b3e99d5b59a45652e2bfbcc630e7d5e27981e117b56919e4211889f",
+      "size": 997,
+      "type": "file"
+    },
+    {
+      "path": "internal/cli/debug_test.go",
+      "hash": "c1ad3daa3fc5f54f055c376db3580df2673d76c79d5665b9f477fc4999553e6b",
+      "size": 1062,
+      "type": "file"
+    },
+    {
+      "path": "internal/cli/import.go",
+      "hash": "1c251cf2a73296c5d8e2142e44f07c0c47161fe868c910553d1dd9d38d80078f",
+      "size": 6302,
+      "type": "file"
+    },
+    {
+      "path": "internal/cli/import_test.go",
+      "hash": "5353f443e4a913aa60dd3b57e01e788f0c6a86bf191e6cecff30c2293de374ab",
+      "size": 11509,
+      "type": "file"
+    },
+    {
+      "path": "internal/cli/init.go",
+      "hash": "b2e6b8a8528afc306eacfc2b045dc16167f7ab5a87130beefbd9a3b7facf3f94",
+      "size": 5382,
+      "type": "file"
+    },
+    {
+      "path": "internal/cli/init_test.go",
+      "hash": "9ef9fb622eec4e33f8578b74349ec0b6e20a4d22331bc1915e5918a9814fe79f",
+      "size": 4554,
+      "type": "file"
+    },
+    {
+      "path": "internal/cli/judge_debug.go",
+      "hash": "985dd24a938c6c92634bb60c1051868613147a4655c7a794e430e010f5330d1a",
+      "size": 12453,
+      "type": "file"
+    },
+    {
+      "path": "internal/cli/judge_debug_test.go",
+      "hash": "09df277002f283eea25c8b996a8f379bbfa1b497d74551b97922535c49293877",
+      "size": 12855,
+      "type": "file"
+    },
+    {
+      "path": "internal/cli/listcases.go",
+      "hash": "6a2e314bbb416b786bfd34f90bfc5433800337f8fe1d97bf11a6bca4990ec394",
+      "size": 1255,
+      "type": "file"
+    },
+    {
+      "path": "internal/cli/listcases_test.go",
+      "hash": "402b36ce363b6725f38224824035f96d40f1a45ba5e9aba3b6168783e8f2454f",
+      "size": 1762,
+      "type": "file"
+    },
+    {
+      "path": "internal/cli/report.go",
+      "hash": "09c07fa12f0a0b14f38848078c11019d1910b5e4335efa1740dacc65858df6ae",
+      "size": 4062,
+      "type": "file"
+    },
+    {
+      "path": "internal/cli/report_debug.go",
+      "hash": "97accb9336d373432c963badb366e6518f19d082b8ec969827517e536584c9bc",
+      "size": 2660,
+      "type": "file"
+    },
+    {
+      "path": "internal/cli/report_debug_test.go",
+      "hash": "3879c0b4de4b32d22b636e8974291a586519e55a66370591a8c7a6d6748cfe8f",
+      "size": 3994,
+      "type": "file"
+    },
+    {
+      "path": "internal/cli/report_test.go",
+      "hash": "272d1636cd71dd4076a7b4356dcb7371d1bb576b36dbc14d054cf76f8e24b8f5",
+      "size": 10125,
+      "type": "file"
+    },
+    {
+      "path": "internal/cli/root.go",
+      "hash": "46de597087fab777a7be0c3b5a758611ca123d4d276b8b580b2d522162e05ad8",
+      "size": 5595,
+      "type": "file"
+    },
+    {
+      "path": "internal/cli/root_test.go",
+      "hash": "6f98e3a006050499d75c0129f0a919e73665fae3a2d3b035807445fb85b644fb",
+      "size": 2813,
+      "type": "file"
+    },
+    {
+      "path": "internal/cli/run.go",
+      "hash": "c13a908af49e9d8480782141d69a9116b7eb442813c9a570016dc298131803be",
+      "size": 33219,
+      "type": "file"
+    },
+    {
+      "path": "internal/cli/run_test.go",
+      "hash": "87e2e0cfd8f731c81e13278108b5f5263fe91841d4df6f97b18654f23a88dd3a",
+      "size": 54186,
+      "type": "file"
+    },
+    {
+      "path": "internal/cli/testdata/evals.json",
+      "hash": "971d40ae891cbe09aefbe095f224fae4aa5e5a1e6d9b8a3b61a0c4caad8e00d7",
+      "size": 414,
+      "type": "file"
+    },
+    {
+      "path": "internal/cli/validate.go",
+      "hash": "9e71dd9e623a802f3589484e9a25de0f5ed9fd90ab72e146c952e10a28ebdeab",
+      "size": 1190,
+      "type": "file"
+    },
+    {
+      "path": "internal/cli/validate_test.go",
+      "hash": "8a8bcba199dc84231ff823eb95d1d81774dcc3381b1c5f358fd031cb43d554a9",
+      "size": 2057,
+      "type": "file"
+    },
+    {
+      "path": "internal/config/README.md",
+      "hash": "fe8c670b5da6d09909ec43bcd29ae8d561f8cc372bee3b6e9a71c9359b9dacb4",
+      "size": 4477,
+      "type": "file"
+    },
+    {
+      "path": "internal/config/customengine.go",
+      "hash": "15cde71accc77d68a6eff9d2fd06ba8c9fe8ac5a34510e68ba6032d7e6c082bb",
+      "size": 18587,
+      "type": "file"
+    },
+    {
+      "path": "internal/config/customengine_compat.go",
+      "hash": "60bad10d41e80f9856dad3b8bb1ca7b0928ae059d306db0cece2fedcb97b6555",
+      "size": 1297,
+      "type": "file"
+    },
+    {
+      "path": "internal/config/customengine_compat_test.go",
+      "hash": "7c8b11e4ee22669bdab4c85e8bd9b857bc2efe2c14ddba967c4b4a86d6f64749",
+      "size": 897,
+      "type": "file"
+    },
+    {
+      "path": "internal/config/customengine_test.go",
+      "hash": "1e8ee30a0450f7526e59da4b5b9cb91cbb1044ee6d13e0a19158e67e82b29384",
+      "size": 23104,
+      "type": "file"
+    },
+    {
+      "path": "internal/config/defaults.go",
+      "hash": "b7238022018e210616684b5f420b69b2790f4a53cc7c8818f528e334a39846cb",
+      "size": 1697,
+      "type": "file"
+    },
+    {
+      "path": "internal/config/defaults.yaml",
+      "hash": "07634632758e412538911ecf2e1a0bfd0424f8321dc2b8f2b23ec0ab81bd00dd",
+      "size": 342,
+      "type": "file"
+    },
+    {
+      "path": "internal/config/loader.go",
+      "hash": "216c116a34ed1c498a013bd0b6ad3c6af958a14fa22e92565b6c732d72347cec",
+      "size": 8649,
+      "type": "file"
+    },
+    {
+      "path": "internal/config/loader_test.go",
+      "hash": "b7b5cd4ae8a9c72708411b643484ff21e547076945a4f33371f123fdbfcd6636",
+      "size": 28032,
+      "type": "file"
+    },
+    {
+      "path": "internal/config/mcp_merge.go",
+      "hash": "37a9b8e713563378b4fb82fb27576389cda090dcd75da7763e5a48edf152ec39",
+      "size": 3204,
+      "type": "file"
+    },
+    {
+      "path": "internal/config/mcp_merge_test.go",
+      "hash": "5957ac18cf55f8ffa57e9406554b42b0115431e013f5271226ed139ea29eb98f",
+      "size": 5110,
+      "type": "file"
+    },
+    {
+      "path": "internal/config/schema.go",
+      "hash": "8e0a50f60eb02b0c894e5bb39bc2ee4a9da4736532ec66d018d8967dd3a070ea",
+      "size": 17706,
+      "type": "file"
+    },
+    {
+      "path": "internal/config/schema_test.go",
+      "hash": "dc85388676fad4bec4730f1d34fed8b70c6dacd5975f3c90155aa6077b2327ef",
+      "size": 6024,
+      "type": "file"
+    },
+    {
+      "path": "internal/config/template_token_test.go",
+      "hash": "610c8edac22d7cd9b7c251f77695c659e7bbfa16c4c152c465b2a85567372984",
+      "size": 2487,
+      "type": "file"
+    },
+    {
+      "path": "internal/config/validator.go",
+      "hash": "72f3b9af92109c609acfae9bd10b262a5d03a9cedc3831db586cc4ec1b947822",
+      "size": 30012,
+      "type": "file"
+    },
+    {
+      "path": "internal/config/validator_test.go",
+      "hash": "646e3d384047e703f746af826779a17940e97c862644a5b119455e05c8c0ca06",
+      "size": 51058,
+      "type": "file"
+    },
+    {
+      "path": "internal/credential/README.md",
+      "hash": "93af44607b589c76b491d665f80395b614d30e53737f641b8a61b4c05001becf",
+      "size": 13987,
+      "type": "file"
+    },
+    {
+      "path": "internal/credential/agent_init.go",
+      "hash": "034765ddfd66c79ccf4c2f5710dcfae413eccc8095d30b80f63ded2139659649",
+      "size": 9595,
+      "type": "file"
+    },
+    {
+      "path": "internal/credential/credential.go",
+      "hash": "cfb744be22dd4e491d01c559fe5e8e1050a3d0d9057433503cf4350c8a9193d6",
+      "size": 5002,
+      "type": "file"
+    },
+    {
+      "path": "internal/credential/credential_test.go",
+      "hash": "707ed9efbefc0284b6597dc601625b0ec067b18282ffc0006361d3f0407d5131",
+      "size": 15889,
+      "type": "file"
+    },
+    {
+      "path": "internal/credential/provider_query.go",
+      "hash": "c43bd974c1f13abbc93c6da49c8e95a2cc0b9bdfee3e3addc31d61ced7adfaeb",
+      "size": 5032,
+      "type": "file"
+    },
+    {
+      "path": "internal/credential/provider_query_test.go",
+      "hash": "f7c93114a3161747e4d9b53f48754e02cdcc070524d7d231fbb90f02380e6ffe",
+      "size": 6511,
+      "type": "file"
+    },
+    {
+      "path": "internal/customengine/config.go",
+      "hash": "79df42141e922f497a6f3cf53b480d650dc36114e14c74bec5e29225ddb6fc45",
+      "size": 2171,
+      "type": "file"
+    },
+    {
+      "path": "internal/customengine/customengine_test.go",
+      "hash": "5a501354bbcdf04115b03f26006686a3dbf9210809fd026189745c282dbce83d",
+      "size": 3165,
+      "type": "file"
+    },
+    {
+      "path": "internal/customengine/path.go",
+      "hash": "455b78500e4543d631f5cea811e560df22659f45888e8a889e4e1e31d151c767",
+      "size": 328,
+      "type": "file"
+    },
+    {
+      "path": "internal/customengine/template_token.go",
+      "hash": "bb5257fe33e5d7f7a0aed7c202339c7cf5885b2ceb9ee916676aa6167ae1bbad",
+      "size": 1497,
+      "type": "file"
+    },
+    {
+      "path": "internal/evaluator/README.md",
+      "hash": "889950808f1a2210bbcc561657a0145b65a810370ac94947893af283bcb37c78",
+      "size": 8160,
+      "type": "file"
+    },
+    {
+      "path": "internal/evaluator/artifacts_collect.go",
+      "hash": "dcf98ae1d9f91f87881c505ada70f1f9a180ffc328d454605605c2090f76c8c8",
+      "size": 5336,
+      "type": "file"
+    },
+    {
+      "path": "internal/evaluator/artifacts_collect_test.go",
+      "hash": "649c93719b9d81e0196df896b79ae336260488f9a801fbcab44e80ddf5175634",
+      "size": 6376,
+      "type": "file"
+    },
+    {
+      "path": "internal/evaluator/evaluator.go",
+      "hash": "c0418346d015d849a11025157da2e34ab8263bbfe017ffb056a8f67a26ed5491",
+      "size": 51728,
+      "type": "file"
+    },
+    {
+      "path": "internal/evaluator/evaluator_test.go",
+      "hash": "f4dc32e14d9081feb46901a909d2586abde4f83516af909572a21816e184d969",
+      "size": 113235,
+      "type": "file"
+    },
+    {
+      "path": "internal/evaluator/fixtures.go",
+      "hash": "6604cf33340c994c15c1038176cb51f279c387ed2fee4f9f59d6604225ccf997",
+      "size": 10148,
+      "type": "file"
+    },
+    {
+      "path": "internal/evaluator/fixtures_test.go",
+      "hash": "24a47427a7b8e68585f86541c8e8f059bd061958f709758cc1b813106ff78a94",
+      "size": 5251,
+      "type": "file"
+    },
+    {
+      "path": "internal/evaluator/multiturn.go",
+      "hash": "ac5a9e7303b96f8afb473a2b4103922e8577c2cfa10260957991a842ac1fd54c",
+      "size": 21838,
+      "type": "file"
+    },
+    {
+      "path": "internal/evaluator/multiturn_test.go",
+      "hash": "1fb60b0c0e3752f2e30ce2abe0ca2a64ed49ae8cbe7df63dc61b3766d4e850db",
+      "size": 26991,
+      "type": "file"
+    },
+    {
+      "path": "internal/judge/README.md",
+      "hash": "22af342818258dbb6e535b65de77863acdfc54434dd72e0b8cd9e71bf1365722",
+      "size": 8007,
+      "type": "file"
+    },
+    {
+      "path": "internal/judge/agent_judge.go",
+      "hash": "ad6dc6a6b9a412ca4e87e41538b93e5b7603c3ce75a78a3ce61defe35e71cee7",
+      "size": 18647,
+      "type": "file"
+    },
+    {
+      "path": "internal/judge/agent_judge_test.go",
+      "hash": "76494c1eadba059c10e5d48aa563f6fb1972acef1537639e0ceefb2343076d92",
+      "size": 31029,
+      "type": "file"
+    },
+    {
+      "path": "internal/judge/context_materializer.go",
+      "hash": "366d26950652bbf9b99ba711f7e016455fdfd1b398d14ccf36b967a461709e3c",
+      "size": 16425,
+      "type": "file"
+    },
+    {
+      "path": "internal/judge/context_materializer_test.go",
+      "hash": "e647d0722434b172abe9926d4fa09d99b9e81ed236728589ceefcd1438734605",
+      "size": 6894,
+      "type": "file"
+    },
+    {
+      "path": "internal/judge/e2e_test.go",
+      "hash": "f6670c692088acb248f5c9eb09eea4d445c462de04d2a503886369de34c21ce5",
+      "size": 36388,
+      "type": "file"
+    },
+    {
+      "path": "internal/judge/expect.go",
+      "hash": "11a3c1c9ab98283a3ce786431250802733ede2f49f535661b671291d6aa9a333",
+      "size": 10007,
+      "type": "file"
+    },
+    {
+      "path": "internal/judge/expect_test.go",
+      "hash": "6e1229eb898616c5d6279b42e520b795f8c839c269b6b0d49d1b7cb5d211ac75",
+      "size": 15456,
+      "type": "file"
+    },
+    {
+      "path": "internal/judge/factory.go",
+      "hash": "d2085a2fc978d6c942e29bf4260d75d677ecc0a8050a6ee82d4d2f9b82d4d6f7",
+      "size": 4759,
+      "type": "file"
+    },
+    {
+      "path": "internal/judge/factory_test.go",
+      "hash": "15753fb025c0d14c8442792a23ea0737a3006c1ecf17305d448f07518470eacf",
+      "size": 10603,
+      "type": "file"
+    },
+    {
+      "path": "internal/judge/helpers_test.go",
+      "hash": "7b155e606913248a663ca7b735b8beec88be045282dc14dc609662a6c07b56fa",
+      "size": 5186,
+      "type": "file"
+    },
+    {
+      "path": "internal/judge/interpreter.go",
+      "hash": "e263e5ff498a4b5cdf2b0701d5e0c90a7d611794b9c11cbbd07715a9fbc545a8",
+      "size": 19487,
+      "type": "file"
+    },
+    {
+      "path": "internal/judge/interpreter_test.go",
+      "hash": "48dc0855f55f8393bdd6ef9a45f55826760f22ebe1ee36b99d02496465a154aa",
+      "size": 14132,
+      "type": "file"
+    },
+    {
+      "path": "internal/judge/judge.go",
+      "hash": "ba5ab202bf4569e882d2fa919132309bfa1c8ccadb7e7a8261245ad43813f45e",
+      "size": 9424,
+      "type": "file"
+    },
+    {
+      "path": "internal/judge/judge_skill.go",
+      "hash": "e2f5e6d62bed15a8118df984c133083566c60fe920ca04204eb76ff732df402d",
+      "size": 1117,
+      "type": "file"
+    },
+    {
+      "path": "internal/judge/judge_skill_test.go",
+      "hash": "44f46bb924e79029ca65c1c23b9c2ce149cef6653dcc2edec262bd15ac1fcf78",
+      "size": 1021,
+      "type": "file"
+    },
+    {
+      "path": "internal/judge/rule_based.go",
+      "hash": "d5ae6c1c7ea3300be2d827563fa5a6fc03080e648f83121165c96d2466dc47d9",
+      "size": 15706,
+      "type": "file"
+    },
+    {
+      "path": "internal/judge/rule_based_test.go",
+      "hash": "e5e391fb9388c844561aa80c21858b17fda234054f23b43b5cfc74762e82427a",
+      "size": 23646,
+      "type": "file"
+    },
+    {
+      "path": "internal/judge/script.go",
+      "hash": "a4eb3530b85cd54a4075374bc82055fb2f6c34e20cda9edcef03e27d8ceea1c6",
+      "size": 5336,
+      "type": "file"
+    },
+    {
+      "path": "internal/judge/script_test.go",
+      "hash": "d2a466a36835107c13007cc3e6ed9421875360f23a4b236c4c5bd6411c20fc7c",
+      "size": 9979,
+      "type": "file"
+    },
+    {
+      "path": "internal/logging/logging.go",
+      "hash": "edf6cb085106ed8c794d8b7d4526703553160efe24c04c885f322b85ea0a2d23",
+      "size": 4586,
+      "type": "file"
+    },
+    {
+      "path": "internal/logging/logging_test.go",
+      "hash": "29d74cebead48d72134390c6170f9c25b25beffebecff136ced43030ea9dbf62",
+      "size": 5097,
+      "type": "file"
+    },
+    {
+      "path": "internal/mcp/mock_server.go",
+      "hash": "64f7dd913faad90ec927bfe20b5620a8f118385cf6666bbaf510b942136b9117",
+      "size": 11448,
+      "type": "file"
+    },
+    {
+      "path": "internal/mcp/mock_server_test.go",
+      "hash": "ec7412de46f6bf47ed9e3c3c3739b7aaca061ce1232c18b6f6e6f747175058e2",
+      "size": 6748,
+      "type": "file"
+    },
+    {
+      "path": "internal/mcp/provisioner.go",
+      "hash": "e72ab4a1977d40fd583c39b98ffc54603946cde60b63a2c6c15b53bc7735dd6f",
+      "size": 11344,
+      "type": "file"
+    },
+    {
+      "path": "internal/mcp/provisioner_test.go",
+      "hash": "3b51f9613580a34d83f02eab4d537c28ce91ae6035ef2cf87416822f7d0d9be8",
+      "size": 14087,
+      "type": "file"
+    },
+    {
+      "path": "internal/observability/README.md",
+      "hash": "723d813b5102d102f011e59b3f89332b114bc1b21609f5a237729f2be8a98395",
+      "size": 13784,
+      "type": "file"
+    },
+    {
+      "path": "internal/observability/observability.go",
+      "hash": "10b9722ce0045b0e84cf2046d62354bbb7c865641c12f1366418c6d5bc9b6699",
+      "size": 21901,
+      "type": "file"
+    },
+    {
+      "path": "internal/observability/observability_test.go",
+      "hash": "c27b955fe1283b0923ed51207b4e9a9ee21ae5d4cdb222ab8b527ecaf7717f63",
+      "size": 15669,
+      "type": "file"
+    },
+    {
+      "path": "internal/platform/bash_other.go",
+      "hash": "3c848e79256b8ea8832cd017eae9c262ca27b2d43a15cb07548c8a5c9645921e",
+      "size": 510,
+      "type": "file"
+    },
+    {
+      "path": "internal/platform/bash_windows.go",
+      "hash": "43942b3634a259cfab998ff7b9cabdb775e15940b13573f59847bb4d7fa61cb6",
+      "size": 2334,
+      "type": "file"
+    },
+    {
+      "path": "internal/platform/platform.go",
+      "hash": "2fbad73f4d175c66b73f82a8d51384c6352873c3a493bbd06abaef6cd002db14",
+      "size": 4121,
+      "type": "file"
+    },
+    {
+      "path": "internal/platform/platform_test.go",
+      "hash": "c5b7275e8b7de81f4a4f129ec5ea13d4453c7d97d13a5afb197ab3489c5c8a2c",
+      "size": 3153,
+      "type": "file"
+    },
+    {
+      "path": "internal/platform/shell_other.go",
+      "hash": "f44daf4f13629552c7a0508df28bc4b37e944fa637019edd2e9a0428b2a1d1b7",
+      "size": 1182,
+      "type": "file"
+    },
+    {
+      "path": "internal/platform/shell_windows.go",
+      "hash": "088ba6b50c6426d5c19394e72b3469193b264d46afe3382f1fd3f4170c6be8b4",
+      "size": 2399,
+      "type": "file"
+    },
+    {
+      "path": "internal/report/README.md",
+      "hash": "ed682b944656d1638a100dddfdbf4cb19f343d3c74421db19e22d5801139c8c3",
+      "size": 11932,
+      "type": "file"
+    },
+    {
+      "path": "internal/report/benchmark.go",
+      "hash": "ec19a5651c0d2af2dbc1a95d5745aa955d6d1c173059fbc12f94d06dad7fbc51",
+      "size": 5052,
+      "type": "file"
+    },
+    {
+      "path": "internal/report/benchmark_anthropic.go",
+      "hash": "7a1cc126e2ba4974f45fadfaa393695e8ac3c8a94e13c6853d6be72256eef871",
+      "size": 7291,
+      "type": "file"
+    },
+    {
+      "path": "internal/report/benchmark_md.go",
+      "hash": "ee0baae648ff54dba38d3c580ce272ec4983c4d06079f6340c967e6671d9fe83",
+      "size": 3670,
+      "type": "file"
+    },
+    {
+      "path": "internal/report/benchmark_md_test.go",
+      "hash": "e2783f4b2b9c815ebc4e5d92f9e559c069c2a51a7b37f55397c2ff4bfb3d24ab",
+      "size": 3294,
+      "type": "file"
+    },
+    {
+      "path": "internal/report/benchmark_test.go",
+      "hash": "bba04c1cc90b6f0727799d7db1b9dbbcd15005a6445fa566a8db79c244e6a5f9",
+      "size": 16782,
+      "type": "file"
+    },
+    {
+      "path": "internal/report/e2e_test.go",
+      "hash": "360e4716ada477dd3f3b2fdee6b1ad6f7627c6f44c28d65e24df8f2a890694fe",
+      "size": 41728,
+      "type": "file"
+    },
+    {
+      "path": "internal/report/grading.go",
+      "hash": "250c8a41c26d3c7a2ce637e0467c081b99cb509c448c0df92cf077e99eb82659",
+      "size": 3776,
+      "type": "file"
+    },
+    {
+      "path": "internal/report/grading_test.go",
+      "hash": "0680423f6b0f9cb18b423cf5c5f1ae496c765fce991bbe6bd669718676804964",
+      "size": 6490,
+      "type": "file"
+    },
+    {
+      "path": "internal/report/helpers.go",
+      "hash": "328cdb37907c6d42ce14f5811b2318714cae420349b509b5e0b9163f5802c43e",
+      "size": 1105,
+      "type": "file"
+    },
+    {
+      "path": "internal/report/html.go",
+      "hash": "5e5768a556daa1c7eb1a1554a98c2e3d3db407f45874a735001e5274f8f12963",
+      "size": 9377,
+      "type": "file"
+    },
+    {
+      "path": "internal/report/json.go",
+      "hash": "9c02cf5e6063465eff934a9353ef9236b501f828a1ed19c805d37b8c3c8ccbaf",
+      "size": 773,
+      "type": "file"
+    },
+    {
+      "path": "internal/report/junit.go",
+      "hash": "7cc418839bbe101f78cc83175b954f5c6edbf6d9a671eaf4565ba951d81494b3",
+      "size": 6569,
+      "type": "file"
+    },
+    {
+      "path": "internal/report/markdown.go",
+      "hash": "548c6e506ea0912f8dc4aee44090a91bb4c36395b23cceb6bbe7639ec25d2a7a",
+      "size": 4473,
+      "type": "file"
+    },
+    {
+      "path": "internal/report/reporter.go",
+      "hash": "63dfea1470b308ccc9a8604129e074274fc4bcfa43c4ab701b75d08f49c7282b",
+      "size": 5718,
+      "type": "file"
+    },
+    {
+      "path": "internal/report/reporter_test.go",
+      "hash": "763a08fc5225d5420132a258a0733b1325a2a2c4760371ed77a486778a6e9e83",
+      "size": 19303,
+      "type": "file"
+    },
+    {
+      "path": "internal/report/template_helpers.go",
+      "hash": "d7251329e0c06bcd97f92fc55a3a7130c6716c321aa6c818c2dd88bcad94ae98",
+      "size": 1267,
+      "type": "file"
+    },
+    {
+      "path": "internal/report/template_helpers_test.go",
+      "hash": "4c34e0f5fe69a0d4f76daa62aee790a8c4c04454794fa3d1ceddf82b3009c6ba",
+      "size": 2647,
+      "type": "file"
+    },
+    {
+      "path": "internal/report/templates/logo.png",
+      "hash": "5649bfb13f463c69f391831952a56409461bc2961e342ada99f901a9deb3a4f5",
+      "size": 16769,
+      "type": "file"
+    },
+    {
+      "path": "internal/report/templates/report.html",
+      "hash": "abee77e2673ec50ddd0228d537ef8e0107fa1b67c72761f8cb30d01bbf6da4ac",
+      "size": 37963,
+      "type": "file"
+    },
+    {
+      "path": "internal/report/templates/review.html",
+      "hash": "5e0877a24f34059eb97a5fdef1d702a6981f12a9a937d94ab43c269f0c093ddb",
+      "size": 5519,
+      "type": "file"
+    },
+    {
+      "path": "internal/report/workspace.go",
+      "hash": "e9d8e2e5acd4d1a8e103c49618ab1f493961e93ae86626acd2e40aa498fa4dad",
+      "size": 7760,
+      "type": "file"
+    },
+    {
+      "path": "internal/report/workspace_test.go",
+      "hash": "9248cd030a5f4a6107951a96dba9b796fcd41eedc0b713280fc34b3541ee4b8f",
+      "size": 8259,
+      "type": "file"
+    },
+    {
+      "path": "internal/runner/runner.go",
+      "hash": "e4817f23c1ba502dbe397df9cac190c9605da9f420aa88a30355f4386fc16e20",
+      "size": 19155,
+      "type": "file"
+    },
+    {
+      "path": "internal/runner/runner_test.go",
+      "hash": "d965d9e450a5ab77b7a29001209cf842f35a72122a0c173f41b15b067dd5b32c",
+      "size": 13643,
+      "type": "file"
+    },
+    {
+      "path": "internal/runner/workspace_options_test.go",
+      "hash": "21c24fa7a22204ca072fa3d1595c32559ac2d4752b3de25c6e934b308478d71e",
+      "size": 16989,
+      "type": "file"
+    },
+    {
+      "path": "internal/runtime/README.md",
+      "hash": "f1bba9bda3c34f361ceb6a25fb46abc33cf425f3e7f16afa4715bc473155ebce",
+      "size": 10796,
+      "type": "file"
+    },
+    {
+      "path": "internal/runtime/docker.go",
+      "hash": "8f335517b3f12d4ead6bc947cde218ab4459226a8972650103dcc3fd2ecce031",
+      "size": 25657,
+      "type": "file"
+    },
+    {
+      "path": "internal/runtime/docker_integration_test.go",
+      "hash": "6dab3873f9db0e76dcf7e09e6f5b15f619385a04dba7748be9c1532eaf572e8c",
+      "size": 14857,
+      "type": "file"
+    },
+    {
+      "path": "internal/runtime/docker_test.go",
+      "hash": "490f3378b3740ed8ad25635e163615a190889a221a0dc9e8bc2e04807bd844e0",
+      "size": 37294,
+      "type": "file"
+    },
+    {
+      "path": "internal/runtime/none.go",
+      "hash": "e7690f552daa15cd931d89d57db1f8510c9a403fd4a3fde21eaa1014cfa6c5d0",
+      "size": 13920,
+      "type": "file"
+    },
+    {
+      "path": "internal/runtime/none_exec_other.go",
+      "hash": "3aebba7882c34d3d64bbc3378e0a33ff845e8cf2af4fb7405b8b24b234a76e3a",
+      "size": 327,
+      "type": "file"
+    },
+    {
+      "path": "internal/runtime/none_exec_unix.go",
+      "hash": "18facf5c5230e2a244f03b7c61a585d318d1a824f12110a5a5bc55975ddcab6d",
+      "size": 2569,
+      "type": "file"
+    },
+    {
+      "path": "internal/runtime/none_test.go",
+      "hash": "baeba7251c447f81abf80cc572ea3f185dc033ac81732c28617e2fd896093c61",
+      "size": 26080,
+      "type": "file"
+    },
+    {
+      "path": "internal/runtime/opensandbox.go",
+      "hash": "6ddcbee83a16ae3219ed2966ffbebe5306ddf88df6b03bf0698fe1eaf53292a7",
+      "size": 25855,
+      "type": "file"
+    },
+    {
+      "path": "internal/runtime/opensandbox_test.go",
+      "hash": "ab1c9af778ea90a954bbe80d1955482627e50bb43ad588e66e5fd82e82ed9272",
+      "size": 37344,
+      "type": "file"
+    },
+    {
+      "path": "internal/runtime/runtime.go",
+      "hash": "565fef267d84d2ba90807ca56a2c003886688790c3903142e2575dcefdc9a6c7",
+      "size": 7227,
+      "type": "file"
+    },
+    {
+      "path": "internal/shellquote/shellquote.go",
+      "hash": "4a5b8a839a58b9e2c6cc47cd109520122abd1f7f3a13866b526e5f4e896f1252",
+      "size": 1733,
+      "type": "file"
+    },
+    {
+      "path": "internal/shellquote/shellquote_test.go",
+      "hash": "0635eeb73145b177bc278deeef174abe8a1a32ed555a523224e5ec2464638479",
+      "size": 1166,
+      "type": "file"
+    },
+    {
+      "path": "internal/skill/installer.go",
+      "hash": "4e3daf50288517142f5cff65145731197f99f64a3fa6b05712d43ee7f9daf090",
+      "size": 198,
+      "type": "file"
+    },
+    {
+      "path": "internal/ui/progress.go",
+      "hash": "471fad37e16a4a38790624a4b724112b8fc6d2a362f1ac4fe2234be710d03a92",
+      "size": 2813,
+      "type": "file"
+    },
+    {
+      "path": "internal/ui/progress_test.go",
+      "hash": "070c25e8f266d2be4350a8a415349e9b9df51bd2cf93618b5512e66fa471c9f8",
+      "size": 1161,
+      "type": "file"
+    },
+    {
+      "path": "internal/userconfig/apply.go",
+      "hash": "cf3a5074e0f3cfd15231c0aef22c4ce5ed861c2ce24988e18e647a5f5db608c0",
+      "size": 3593,
+      "type": "file"
+    },
+    {
+      "path": "internal/userconfig/apply_test.go",
+      "hash": "e1e3a6f49b9d27ee0760c46578dc2c2a7db946ffc92c3a1b975fe0de9e4154c0",
+      "size": 4655,
+      "type": "file"
+    },
+    {
+      "path": "internal/userconfig/config.go",
+      "hash": "9a2653d9b5e03ffd0372efe65825699064954c708270469e730d2d0823e8befb",
+      "size": 4090,
+      "type": "file"
+    },
+    {
+      "path": "internal/userconfig/config_test.go",
+      "hash": "c37f4cad66ef6eddd47ba03af11136c1bee281156f25e45dbb4ed48da86f4137",
+      "size": 2994,
+      "type": "file"
+    },
+    {
+      "path": "internal/userconfig/loader.go",
+      "hash": "56aebdd8bb31e3449a473cb8eaa5a5a088f6c60505f60a5b93db1f18d1d88e09",
+      "size": 5500,
+      "type": "file"
+    },
+    {
+      "path": "internal/userconfig/loader_test.go",
+      "hash": "542bbf10343a1361e02bd43da48689a6e28ea9f97a8e720184cc296fc3dfc5de",
+      "size": 7535,
+      "type": "file"
+    },
+    {
+      "path": "internal/userconfig/redact.go",
+      "hash": "e209fb09359afcfb9e3fa54047b7ae3c2c9a2ac96dc145c783207549348ff638",
+      "size": 1261,
+      "type": "file"
+    },
+    {
+      "path": "internal/userconfig/redact_test.go",
+      "hash": "4937d6cd105eff0644163358b7a36c5144c544adec2fcd72a8788bc9942c63ac",
+      "size": 1155,
+      "type": "file"
+    },
+    {
+      "path": "package-lock.json",
+      "hash": "208c42547cc890a149a33d028698dfe84945ca798db02a14dbbbacb9e6607b3e",
+      "size": 86046,
+      "type": "file"
+    },
+    {
+      "path": "package.json",
+      "hash": "ec6c78a876edaa50c5328ab30afc59a11eb1e9587ada7547edd490ea3387cda9",
+      "size": 381,
+      "type": "file"
+    },
+    {
+      "path": "pkg/skillup/skillup.go",
+      "hash": "b9d80dedbe5ad09fc770ccec4e3f47708a9dc0ed6eaa4834a72dcdb0f875143f",
+      "size": 290,
+      "type": "file"
+    },
+    {
+      "path": "pkg/skillup/skillup_test.go",
+      "hash": "5f4038d73c59ac9e22db7112fd55a1c63ae02b3533d847e2a83518b198090dcb",
+      "size": 247,
+      "type": "file"
+    },
+    {
+      "path": "pkg/transcript/doc.go",
+      "hash": "2db6c279dc54cded6e7bb41ad452940b45cbcfa3d5dc4e62dfedbe7af6f27950",
+      "size": 411,
+      "type": "file"
+    },
+    {
+      "path": "pkg/transcript/transcript.go",
+      "hash": "477bf092b4e2e472645e5651e6f503f3153d9387f69eba5083705d7db21379c7",
+      "size": 2330,
+      "type": "file"
+    },
+    {
+      "path": "pkg/transcript/transcript_test.go",
+      "hash": "44c78b8e9e445383ed5c2fb0c5b6d26329a0fac035313257491b5583ce77b9e2",
+      "size": 1751,
+      "type": "file"
+    },
+    {
+      "path": "proposals/0001-multi-turn-conversation-eval.md",
+      "hash": "ac93375d49bd37dee19b43470aa737b9e1c258406d66aa906b8c0901d9b7e223",
+      "size": 110078,
+      "type": "file"
+    },
+    {
+      "path": "proposals/0002-agent-judge-specific-skill.md",
+      "hash": "d7020cd3f278745a09b0f122904235c8198c33cc6d7cd5c60430de44c057e878",
+      "size": 36237,
+      "type": "file"
+    },
+    {
+      "path": "proposals/0003-per-case-mocked-mcp-responses.md",
+      "hash": "3f8215f4b000074050abc2106370d17c5e4c5b25e03036bfb7f0f152e718191c",
+      "size": 23891,
+      "type": "file"
+    },
+    {
+      "path": "proposals/0004-agent-judge-context-delivery.md",
+      "hash": "c59428acf889427192d4a66a1b2c5c75ef7c5efd37f14d3726abf1acfc2e0a5c",
+      "size": 24340,
+      "type": "file"
+    },
+    {
+      "path": "proposals/CONTRIBUTING.md",
+      "hash": "26ce4d604df4258aedd8cdcd7ce50405eb0c51d959cd4fb0ccd2dcf9595613cb",
+      "size": 3342,
+      "type": "file"
+    },
+    {
+      "path": "proposals/README.md",
+      "hash": "b8eafa46dac2d14c242ca0f2cbb6e6bad655954b062223f0773cf5032e6870c7",
+      "size": 1214,
+      "type": "file"
+    },
+    {
+      "path": "proposals/init-proposal.sh",
+      "hash": "b3bdda799f0f6251800286a9ba090d979bf221118c0607633e2ab3c1e53a1699",
+      "size": 6115,
+      "type": "file"
+    },
+    {
+      "path": "proposals/proposal-template.md.template",
+      "hash": "585057849b4579f849d90ae700a696e6de2a4dea75827d88ad77e779c4c2329f",
+      "size": 2972,
+      "type": "file"
+    },
+    {
+      "path": "proposals/zh/0001-multi-turn-conversation-eval.md",
+      "hash": "83d58f141d83e8c4458c058f5d0615c78970dc0830bd6f17001b472e2ca3e52a",
+      "size": 103350,
+      "type": "file"
+    },
+    {
+      "path": "proposals/zh/0002-agent-judge-specific-skill.md",
+      "hash": "777e30e36ee7ff6725145effdf93df2da8ba3833aa9b587e5c4a46890b756325",
+      "size": 36429,
+      "type": "file"
+    },
+    {
+      "path": "proposals/zh/0003-per-case-mocked-mcp-responses.md",
+      "hash": "6ace24e579244c8bc26351411690ac5099d5e74ff4cc1da1d2465e0daedc4c0d",
+      "size": 23007,
+      "type": "file"
+    },
+    {
+      "path": "proposals/zh/0004-agent-judge-context-delivery.md",
+      "hash": "fc1d762cad40fe84a0c71c352be6f6cd33bf8a90ed2f17cc7c47ed0a16216f54",
+      "size": 26009,
+      "type": "file"
+    },
+    {
+      "path": "pyproject.toml",
+      "hash": "c063f069030e9df6cdd665aa9a22022b17ea8f762f971d4f224c0bd3cd6674ef",
+      "size": 1005,
+      "type": "file"
+    },
+    {
+      "path": "revive.toml",
+      "hash": "c46b40f941eefc9f9c3df43bac5e1aeb5baa4e4c7efbb557a9f8623a6792b3aa",
+      "size": 1642,
+      "type": "file"
+    },
+    {
+      "path": "scripts/windows/hooks.ps1",
+      "hash": "7585c0c9874a939a33ca537d190aa9e2990ecf07f8aa4e6ff8f63a9065b3dc92",
+      "size": 422,
+      "type": "file"
+    },
+    {
+      "path": "scripts/windows/lint-tools.ps1",
+      "hash": "4ee9c7a37c167f07079bd02ceb413dec12b2b6c6e504c45fdcf46c0138e1fa70",
+      "size": 830,
+      "type": "file"
+    },
+    {
+      "path": "scripts/windows/verify.ps1",
+      "hash": "1131529a5e1903b040dbbf0639feeff738e53ca90279e5570ed92b114a212a17",
+      "size": 953,
+      "type": "file"
+    },
+    {
+      "path": "skills/skill-upper/README.md",
+      "hash": "a833b1c6d33d45c9692fb9550b8eb1f3df6145634c28bfd481681fa79c1b163a",
+      "size": 942,
+      "type": "file"
+    },
+    {
+      "path": "skills/skill-upper/README.zh.md",
+      "hash": "1c706feacfa336869c35bebfebce9c5591a392aef1d43b7e3b609ac978cfb7dd",
+      "size": 966,
+      "type": "file"
+    },
+    {
+      "path": "skills/skill-upper/SKILL.md",
+      "hash": "ec36f399fafeef715585e3a5fe6aec362ab6d9b43bc565bd0dc40d7f7615e07e",
+      "size": 13229,
+      "type": "file"
+    },
+    {
+      "path": "skills/skill-upper/assets/case.yaml.tmpl",
+      "hash": "cb54b7433c24027dd941151abc8bccac0a6d50047cad892e3589e342f54c8662",
+      "size": 2329,
+      "type": "file"
+    },
+    {
+      "path": "skills/skill-upper/assets/eval.yaml.tmpl",
+      "hash": "3d2b0c36b6f06ad5592bc3b21819de80b9e10d0545f0931fe95265bc6994f29a",
+      "size": 1962,
+      "type": "file"
+    },
+    {
+      "path": "skills/skill-upper/evals/cases/add-case-to-existing.yaml",
+      "hash": "9336e59cb896a7a864286a28051dd4bc7c5423d96c26e443c3d94af8025a2702",
+      "size": 1127,
+      "type": "file"
+    },
+    {
+      "path": "skills/skill-upper/evals/cases/english-context-generates-english-only-cases.yaml",
+      "hash": "27b23a23994ad4f3b721b569c80ac27fac2ec48e1b7d65c408429efbd4adb7b9",
+      "size": 868,
+      "type": "file"
+    },
+    {
+      "path": "skills/skill-upper/evals/cases/evolve-existing-skill.yaml",
+      "hash": "9b893838b342b457a86a5ed8f440eaeee1afa9fe29daf9b5ee58c155206e7c51",
+      "size": 1462,
+      "type": "file"
+    },
+    {
+      "path": "skills/skill-upper/evals/cases/scaffold-new-evals.yaml",
+      "hash": "ebc83797b3c11bba3dad0f73f49cf6004bee5ed18730ebce615387b7bc31992d",
+      "size": 1230,
+      "type": "file"
+    },
+    {
+      "path": "skills/skill-upper/evals/cases/scaffold-with-qodercli-engine.yaml",
+      "hash": "ab01873b560b58206ad49e574472f8b3e242fac6d4776fa8e3a3a6eedd807239",
+      "size": 1286,
+      "type": "file"
+    },
+    {
+      "path": "skills/skill-upper/evals/cases/scaffold-with-script-judge.yaml",
+      "hash": "778cc764e40bac77b543a0186b2ab2280783a37ece5679b36d7159b1876f5bf6",
+      "size": 1302,
+      "type": "file"
+    },
+    {
+      "path": "skills/skill-upper/evals/eval.yaml",
+      "hash": "ddc0aa8028240695f96e2339173b88a776b5fa069e6cee1c2c8014d1c78c0580",
+      "size": 857,
+      "type": "file"
+    },
+    {
+      "path": "skills/skill-upper/evals/fixtures/scripts/assert-english-only-generated-cases.sh",
+      "hash": "7246b965a516d6de0ca49356fd9ea5f29c2bbd108be96e6b23bcfae1fb177045",
+      "size": 1379,
+      "type": "file"
+    },
+    {
+      "path": "skills/skill-upper/evals/fixtures/skills/sample-no-evals/SKILL.md",
+      "hash": "03bc40dabca0fe37759ea02099fa8fbe53b247cf21145f9bb157f1f3e948791e",
+      "size": 805,
+      "type": "file"
+    },
+    {
+      "path": "skills/skill-upper/evals/fixtures/skills/sample-with-evals/SKILL.md",
+      "hash": "04ff6fd146677d8aaad64dba500193c7a8d4d19f3bb1ca6612ef3458b79d33ac",
+      "size": 636,
+      "type": "file"
+    },
+    {
+      "path": "skills/skill-upper/evals/fixtures/skills/sample-with-evals/evals/cases/add-todo.yaml",
+      "hash": "3b794a6e26e11040c806b679a28391a9f502705efaedbd103de6c5c075492b3c",
+      "size": 288,
+      "type": "file"
+    },
+    {
+      "path": "skills/skill-upper/evals/fixtures/skills/sample-with-evals/evals/eval.yaml",
+      "hash": "7fec9f40d6162c654b156cb472319fd92d342d61b8aaaaffb6b62984b9d65d43",
+      "size": 276,
+      "type": "file"
+    },
+    {
+      "path": "skills/skill-upper/references/case-yaml.md",
+      "hash": "39f6ec25ae780b5d87e9a92dfaf9b447428d34081f87f6fa522844748a46357b",
+      "size": 3944,
+      "type": "file"
+    },
+    {
+      "path": "skills/skill-upper/references/cli.md",
+      "hash": "9340f28dddc07e80a3e9f7686197b946bc42214ba41c5738bf2c0e9555b14a3d",
+      "size": 8556,
+      "type": "file"
+    },
+    {
+      "path": "skills/skill-upper/references/eval-yaml.md",
+      "hash": "97fbf02bb71d095177ba40d644dbeae97af80b3ba675da504c32222fb1688bb9",
+      "size": 7123,
+      "type": "file"
+    },
+    {
+      "path": "skills/skill-upper/references/install.md",
+      "hash": "3a6ac510d112b423a32eed62b278b1ce9c2adaa6010d8c8773726c72f4275da0",
+      "size": 2158,
+      "type": "file"
+    },
+    {
+      "path": "skills/skill-upper/references/judge-types.md",
+      "hash": "9d4632dcf1eeda61d10b554c116dbbab05e0a5edb1abe893eba9dd7825d20bdd",
+      "size": 2903,
+      "type": "file"
+    },
+    {
+      "path": "skills/skill-upper/references/migrate-anthropic.md",
+      "hash": "589c4f3b0ffcff77400e1806760769ba2e9464913870f4ee62516b6c7d0f904d",
+      "size": 2023,
+      "type": "file"
+    },
+    {
+      "path": "src/agent_skill_eval/__init__.py",
+      "hash": "c3745640c2bd2fa8ef8b1c008b73b59cd01d026903e2d93a698ac322111a3aad",
+      "size": 229,
+      "type": "file"
+    },
+    {
+      "path": "src/agent_skill_eval/__main__.py",
+      "hash": "241fe4c99e3b33c3eabad49ac84710fd9d9840ef9d05500ceb55f4024c497dde",
+      "size": 46,
+      "type": "file"
+    },
+    {
+      "path": "src/agent_skill_eval/agent.py",
+      "hash": "f514b461a1686cd5b794bddd31f2f369cf9681ba489d3421cf8e74a22b727c11",
+      "size": 9508,
+      "type": "file"
+    },
+    {
+      "path": "src/agent_skill_eval/cli.py",
+      "hash": "4197cc35495548807a8c191c9c24d48671f1eaff9e3c0d907ef11421fe59e689",
+      "size": 3166,
+      "type": "file"
+    },
+    {
+      "path": "src/agent_skill_eval/errors.py",
+      "hash": "a8d4e399af8d0b7bcf9451589649f195957595e244cabc8f3ec8bb66ed5946ab",
+      "size": 454,
+      "type": "file"
+    },
+    {
+      "path": "src/agent_skill_eval/evaluator.py",
+      "hash": "3abaec330e89d0ca02e31e76ca77bf2a6989e10c4b4040195ca39ee866e95291",
+      "size": 6814,
+      "type": "file"
+    },
+    {
+      "path": "src/agent_skill_eval/judge.py",
+      "hash": "e3803abc8cdacec633353c5dc595b6d2fbc3b953b3db9d4412abe8f219c12294",
+      "size": 7834,
+      "type": "file"
+    },
+    {
+      "path": "src/agent_skill_eval/loader.py",
+      "hash": "f5992fa4e914b47e03701ae024d395d5da9ba391330c45dbeb945633c01d10b7",
+      "size": 7691,
+      "type": "file"
+    },
+    {
+      "path": "src/agent_skill_eval/models.py",
+      "hash": "e8da319f2ffc25cdc96394f662e202042014326b9c5b4b5e38e19e95d7c03c7f",
+      "size": 8352,
+      "type": "file"
+    },
+    {
+      "path": "src/agent_skill_eval/report.py",
+      "hash": "2cd0d3ddbaacb82ce1228de717c7e562fa3933ba13dad7b3c2edd5006566e4f9",
+      "size": 2241,
+      "type": "file"
+    },
+    {
+      "path": "src/agent_skill_eval/runtime.py",
+      "hash": "c26904d0b4dbaa6b46202ea612e6a368cfee87e2cfaafbfb1becc3faeef87725",
+      "size": 4890,
+      "type": "file"
+    },
+    {
+      "path": "tests/conftest.py",
+      "hash": "5e3ef5d0920ef59c56aa7f2bc5ef8b25a7d96863bb512ce5e7b19c01de081712",
+      "size": 1310,
+      "type": "file"
+    },
+    {
+      "path": "tests/test_cli.py",
+      "hash": "26c4b2b75548412f0ee333126813fc203d0c80a5c3ebb6c0d7237a75ddd23af2",
+      "size": 982,
+      "type": "file"
+    },
+    {
+      "path": "tests/test_evaluator.py",
+      "hash": "3471962861b79b9ab812fc7cc35106719a105cc88c3ed1de3e35a8a1e19bc367",
+      "size": 4020,
+      "type": "file"
+    },
+    {
+      "path": "tests/test_judge.py",
+      "hash": "7cf2df2e4ab39ae06eb6296737206141c03632beea3cd62900a60b4aeefab657",
+      "size": 2026,
+      "type": "file"
+    },
+    {
+      "path": "tests/test_loader.py",
+      "hash": "6cceadafba6a822996115889b9dfbf70f2613a46f93a28bf059610e72c101761",
+      "size": 2932,
+      "type": "file"
+    },
+    {
+      "path": "tests/test_runtime.py",
+      "hash": "c89718154eecfd3f401573adc4bbce3fb9689e96d24ccd5d105a939deb6364ce",
+      "size": 1186,
+      "type": "file"
+    },
+    {
+      "path": "uv.lock",
+      "hash": "380b740aab542050e945823ea8119000876afe9df649e217fc2765c8915db5f7",
+      "size": 161642,
+      "type": "file"
+    }
+  ],
+  "omitted": [],
+  "omittedCount": 0
+}

@@ -1,0 +1,23 @@
+schema: comet.native.v3
+minimum_runtime_version: 3
+revision: 5
+verification_protocol: legacy-v1
+name: python-rewrite
+language: zh-CN
+phase: archive
+brief: brief.md
+approval: confirmed
+approved_contract_hash: efdf8b772120296161954a268d0ebb7b32e2d304696c4488aa44d097c80d1b45
+spec_changes:
+  - capability: python-skill-evaluation
+    operation: create
+    source: specs/python-skill-evaluation/spec.md
+    base_hash: null
+verification_result: pass
+verification_report: verification.md
+implementation_scope: runtime/evidence/scopes/e46cfe6a1a3448ed2ba88ebba9f195fd4e2d2b4787dc4c04fac73a03600e4970.json
+verification_evidence: runtime/evidence/verifications/7b506d9b02f62443aa0921a92b4f9bc5d6a25ac5162ed0d9808fe122b04e3dfd.json
+partial_allowance: null
+archived: true
+created_at: 2026-08-10
+run_id: 87d88829-1e97-4f7f-8233-0a8cea8f0a4f

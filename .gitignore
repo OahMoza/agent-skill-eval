@@ -66,3 +66,13 @@ docs/.vitepress/dist/
 
 # Local verification project
 /verify-multi-turn/
+
+# Python tooling and local evaluation output
+/.coverage
+/.tmp/
+/.venv/
+**/__pycache__/
+**/*.egg-info/
+/build/
+/dist/
+*.pyc

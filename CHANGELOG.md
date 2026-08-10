@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- An independently branded Python preview, `agent-skill-eval`, with typed
+  `v1alpha1` loading, a local runtime, Fake/Custom Local agents, deterministic
+  expect and rule-based judging, JSON/grading reports, tests, and a cross-platform
+  Python 3.11/3.13 CI matrix. The existing Go implementation remains unchanged.
 - Eval-level default expect checks under `cases.defaults.expect`, with
   append-and-deduplicate semantics for list checks and case-level overrides for
   `exit_code` and `golden_file`.

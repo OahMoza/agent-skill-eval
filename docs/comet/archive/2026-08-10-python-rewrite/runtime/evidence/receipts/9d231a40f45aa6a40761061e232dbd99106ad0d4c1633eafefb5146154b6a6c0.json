@@ -1,0 +1,58 @@
+{
+  "schema": "comet.native.verification-receipt.v3",
+  "kind": "automated-check",
+  "role": "acceptance-evidence",
+  "status": "passed",
+  "bindings": {
+    "change": "python-rewrite",
+    "sourceRevision": 3,
+    "contractHash": "efdf8b772120296161954a268d0ebb7b32e2d304696c4488aa44d097c80d1b45",
+    "scopeHash": "e46cfe6a1a3448ed2ba88ebba9f195fd4e2d2b4787dc4c04fac73a03600e4970",
+    "snapshotHash": "373904e71ea9d444614830c53cd7bd37b9d3ae4903393ac27e622e912e4ff33c",
+    "artifactHash": "ca37d604dda6b77e12a07e02debd01f487e392acc80c7fe26060695b3417490c"
+  },
+  "acceptanceIds": [
+    "acceptance-4f6121a0a82e57ff201535d1e29de414ca798fa4898e4dc003e8d578adc6c358",
+    "acceptance-893d18c6458596580d345c5a4699eabd50e110650d210bf89d1b1d53a870bf02",
+    "acceptance-9c84d85aebdcc37506154d7a5b7a5e48faa64787bda5d27236c56130d07c0e7a"
+  ],
+  "actor": "native-runtime:command:docker",
+  "issuedAt": "2026-08-10T05:38:06.958Z",
+  "evidence": {
+    "executable": "docker",
+    "args": [
+      "run",
+      "--rm",
+      "--mount",
+      "type=bind,source=E:\\WorkSpace\\github\\skill-up\\.worktrees\\python-rewrite,target=/work",
+      "-w",
+      "/work",
+      "golang:1.25",
+      "sh",
+      "-c",
+      "/usr/local/go/bin/go test -race ./... >/tmp/go-test.log 2>&1 && printf go-race-tests-passed"
+    ],
+    "cwd": ".",
+    "exitCode": 0,
+    "signal": null,
+    "timedOut": false,
+    "timeoutMs": 540000,
+    "startedAt": "2026-08-10T05:37:17.870Z",
+    "endedAt": "2026-08-10T05:38:06.958Z",
+    "worktree": {
+      "provider": "git",
+      "root": ".",
+      "beforeCommit": "c6ca37aeb6c36eca1141101d0632401414957705",
+      "afterCommit": "c6ca37aeb6c36eca1141101d0632401414957705"
+    },
+    "afterFence": {
+      "snapshotHash": "373904e71ea9d444614830c53cd7bd37b9d3ae4903393ac27e622e912e4ff33c",
+      "scopeHash": "e46cfe6a1a3448ed2ba88ebba9f195fd4e2d2b4787dc4c04fac73a03600e4970",
+      "matched": true
+    },
+    "outputHash": "aef8d170add1916d877d54244ad4d64f32fd89eeedac2b4ae46d3e36f0f814f6",
+    "outputSummary": "go-race-tests-passed",
+    "outputTruncated": false
+  },
+  "receiptHash": "9d231a40f45aa6a40761061e232dbd99106ad0d4c1633eafefb5146154b6a6c0"
+}

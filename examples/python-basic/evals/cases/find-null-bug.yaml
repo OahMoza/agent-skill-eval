@@ -1,0 +1,8 @@
+id: find-null-bug
+title: Find a null handling bug
+tag: functional_test
+input:
+  prompt: Review the fixture for a null handling bug.
+expect:
+  must_contain: ["analysis complete"]
+
